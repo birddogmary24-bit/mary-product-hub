@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1240" width="1600" height="1240">
+  <defs>
+    <style>
+      .title { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Segoe UI", Roboto, sans-serif; font-weight: 800; font-size: 26px; fill: #ffffff; letter-spacing: -0.5px; }
+      .subtitle { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Segoe UI", Roboto, sans-serif; font-weight: 500; font-size: 13px; fill: #94a3b8; }
+      .badge-text { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Segoe UI", Roboto, sans-serif; font-weight: 700; font-size: 11px; fill: #ffffff; }
+      .sec-title { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Segoe UI", Roboto, sans-serif; font-weight: 800; font-size: 14.5px; letter-spacing: -0.3px; }
+      .card-title { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Segoe UI", Roboto, sans-serif; font-weight: 700; font-size: 13.5px; letter-spacing: -0.2px; }
+      .card-sub { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Segoe UI", Roboto, sans-serif; font-weight: 600; font-size: 11px; fill: #64748b; }
+      .bullet-title { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Segoe UI", Roboto, sans-serif; font-weight: 700; font-size: 11.5px; fill: #1e293b; }
+      .bullet-desc { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Segoe UI", Roboto, sans-serif; font-weight: 400; font-size: 10.5px; fill: #475569; }
+      .layer-label { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Segoe UI", Roboto, sans-serif; font-weight: 800; font-size: 12px; fill: #0f172a; text-transform: uppercase; letter-spacing: 0.8px; }
+      .tag-text { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Segoe UI", Roboto, sans-serif; font-weight: 600; font-size: 10px; }
+    </style>
+
+    <linearGradient id="headerGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+
+    <linearGradient id="cardGradWhite" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+
+    <filter id="shadowSm" x="-4%" y="-4%" width="108%" height="112%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.05"/>
+    </filter>
+
+    <filter id="shadowMd" x="-4%" y="-4%" width="108%" height="114%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.07"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1600" height="1240" rx="16" fill="url(#bgGrad)"/>
+  <rect x="1" y="1" width="1598" height="1238" rx="15" fill="none" stroke="#cbd5e1" stroke-width="1.5"/>
+
+  <!-- Top Hero Header -->
+  <g transform="translate(24, 20)">
+    <rect width="1552" height="96" rx="12" fill="url(#headerGrad)" filter="url(#shadowMd)"/>
+    <rect x="0.5" y="0.5" width="1551" height="95" rx="11.5" fill="none" stroke="#334155" stroke-width="1"/>
+
+    <!-- Left Logo & Title -->
+    <rect x="24" y="22" width="52" height="52" rx="12" fill="#1677ff"/>
+    <text x="50" y="55" font-family="sans-serif" font-weight="900" font-size="22" fill="#ffffff" text-anchor="middle">M</text>
+
+    <text x="92" y="47" class="title">MARY 프라이빗 금융 에이전트 · 전체 정보구조 (Information Architecture)</text>
+    <text x="92" y="68" class="subtitle">반응형 Web · PWA · 모바일 확장 앱 전역 화면 구조, 7대 워크스페이스, 전문 드로어, 오너 보관함 및 AI 데이터 파이프라인 SSOT</text>
+
+    <!-- Right Header Badges -->
+    <g transform="translate(1030, 26)">
+      <rect x="0" y="0" width="100" height="22" rx="11" fill="#1e293b" stroke="#334155"/>
+      <circle cx="10" cy="11" r="4" fill="#52c41a"/>
+      <text x="54" y="15" class="badge-text" text-anchor="middle">18개 화면 (PV)</text>
+
+      <rect x="108" y="0" width="100" height="22" rx="11" fill="#1e293b" stroke="#334155"/>
+      <circle cx="118" cy="11" r="4" fill="#1677ff"/>
+      <text x="162" y="15" class="badge-text" text-anchor="middle">43개 메뉴 클릭</text>
+
+      <rect x="216" y="0" width="100" height="22" rx="11" fill="#1e293b" stroke="#334155"/>
+      <circle cx="226" cy="11" r="4" fill="#faad14"/>
+      <text x="270" y="15" class="badge-text" text-anchor="middle">28종 PII 제거</text>
+
+      <rect x="324" y="0" width="96" height="22" rx="11" fill="#1e293b" stroke="#334155"/>
+      <circle cx="334" cy="11" r="4" fill="#722ed1"/>
+      <text x="376" y="15" class="badge-text" text-anchor="middle">14개 SQL 마이그</text>
+
+      <rect x="428" y="0" width="86" height="22" rx="11" fill="#1677ff"/>
+      <text x="471" y="15" class="badge-text" text-anchor="middle">v2.5 Full IA</text>
+    </g>
+  </g>
+
+  <!-- ========================================================================= -->
+  <!-- LAYER 1: 진입 계층, 전역 셸 & 오버레이 (Top Row) -->
+  <!-- ========================================================================= -->
+  <g transform="translate(24, 130)">
+    <!-- Layer Label -->
+    <rect x="0" y="0" width="6" height="18" rx="3" fill="#1677ff"/>
+    <text x="14" y="14" class="layer-label">LAYER 1 · 진입 / 무깜빡임 기기 격리 · 전역 셸 &amp; 내비게이션 · 전문 오버레이</text>
+
+    <!-- Card 1-A: 진입 & 기기 격리 계층 (x:0, w:450, h:150) -->
+    <g transform="translate(0, 26)">
+      <rect width="450" height="146" rx="10" fill="url(#cardGradWhite)" stroke="#cbd5e1" stroke-width="1.2" filter="url(#shadowSm)"/>
+      <path d="M 0 10 Q 0 0 10 0 L 440 0 Q 450 0 450 10 L 450 32 L 0 32 Z" fill="#e6f4ff"/>
+      <text x="14" y="21" class="sec-title" fill="#0958d9">01. 진입 / 무깜빡임 인증 · 기기 격리 계층</text>
+      <rect x="370" y="6" width="68" height="18" rx="9" fill="#1677ff"/>
+      <text x="404" y="18" class="badge-text" text-anchor="middle">Security</text>
+
+      <g transform="translate(14, 44)">
+        <circle cx="4" cy="6" r="3" fill="#1677ff"/>
+        <text x="14" y="10" class="bullet-title">무로그인 기기 즉시 격리</text>
+        <text x="14" y="24" class="bullet-desc">HMAC 서명 쿠키 + 로컬 백업 토큰으로 기기 워크스페이스 격리 (180일 TTL)</text>
+
+        <circle cx="4" cy="40" r="3" fill="#1677ff"/>
+        <text x="14" y="44" class="bullet-title">불투명 '로그인 중...' 게이트 (PR #87)</text>
+        <text x="14" y="58" class="bullet-desc">authChecked 완료 전 로그인 폼 노출 차단으로 깜빡임 원천 제거</text>
+
+        <circle cx="4" cy="74" r="3" fill="#1677ff"/>
+        <text x="14" y="78" class="bullet-title">이메일 계정 인증 &amp; 세션 연동</text>
+        <text x="14" y="92" class="bullet-desc">영숫자·특수문자 규격 검증 · 로그인/로그아웃 · 탈퇴 시 기기 데이터 영구 파기</text>
+      </g>
+    </g>
+
+    <!-- Card 1-B: 전역 셸 & 레이아웃 (x:466, w:590, h:150) -->
+    <g transform="translate(466, 26)">
+      <rect width="590" height="146" rx="10" fill="url(#cardGradWhite)" stroke="#cbd5e1" stroke-width="1.2" filter="url(#shadowSm)"/>
+      <path d="M 0 10 Q 0 0 10 0 L 580 0 Q 590 0 590 10 L 590 32 L 0 32 Z" fill="#f9f0ff"/>
+      <text x="14" y="21" class="sec-title" fill="#531dab">02. 전역 셸 &amp; 내비게이션 시스템</text>
+      <rect x="502" y="6" width="76" height="18" rx="9" fill="#722ed1"/>
+      <text x="540" y="18" class="badge-text" text-anchor="middle">Navigation</text>
+
+      <g transform="translate(14, 44)">
+        <g transform="translate(0, 0)">
+          <circle cx="4" cy="6" r="3" fill="#722ed1"/>
+          <text x="14" y="10" class="bullet-title">데스크톱 3단 레일</text>
+          <text x="14" y="23" class="bullet-desc">앱 아이콘 레일 + 스레드 목록 사이더 + 메인 워크스페이스</text>
+
+          <circle cx="4" cy="38" r="3" fill="#722ed1"/>
+          <text x="14" y="42" class="bullet-title">미니멀 상단바 ([≡] MARY + [알림함])</text>
+          <text x="14" y="55" class="bullet-desc">[≡] 클릭 시 빌드 대조 캐시 새로고침 + 우상단 알림함 필 버튼 통일</text>
+        </g>
+        <g transform="translate(290, 0)">
+          <circle cx="4" cy="6" r="3" fill="#722ed1"/>
+          <text x="14" y="10" class="bullet-title">모바일 5대 슬림 탭 &amp; 스와이프 드로어</text>
+          <text x="14" y="23" class="bullet-desc">피드 &gt; 발견 &gt; 대화(원형 CTA) &gt; 전략 &gt; 포트폴리오 + 좌측 드로어</text>
+
+          <circle cx="4" cy="38" r="3" fill="#722ed1"/>
+          <text x="14" y="42" class="bullet-title">다단 인앱 History Back 스택 복귀</text>
+          <text x="14" y="55" class="bullet-desc">서브탭·드로어·모달 단계별 복귀, 직접 진입 시 chat 바닥 보장</text>
+        </g>
+        <g transform="translate(0, 72)">
+          <rect x="0" y="0" width="562" height="22" rx="4" fill="#f8fafc" stroke="#e2e8f0"/>
+          <text x="8" y="15" class="bullet-desc" fill="#475569"><tspan font-weight="700" fill="#334155">PWA 독립 실행:</tspan> manifest.ts + sw.js 오프라인 캐시 및 앱 설치 지원</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Card 1-C: 전문 오버레이 & 드로어 (x:1072, w:480, h:150) -->
+    <g transform="translate(1072, 26)">
+      <rect width="480" height="146" rx="10" fill="url(#cardGradWhite)" stroke="#cbd5e1" stroke-width="1.2" filter="url(#shadowSm)"/>
+      <path d="M 0 10 Q 0 0 10 0 L 470 0 Q 480 0 480 10 L 480 32 L 0 32 Z" fill="#e6fffb"/>
+      <text x="14" y="21" class="sec-title" fill="#08979c">03. 전문 오버레이 &amp; 슬라이드 드로어</text>
+      <rect x="396" y="6" width="72" height="18" rx="9" fill="#13c2c2"/>
+      <text x="432" y="18" class="badge-text" text-anchor="middle">Overlays</text>
+
+      <g transform="translate(14, 44)">
+        <circle cx="4" cy="6" r="3" fill="#13c2c2"/>
+        <text x="14" y="10" class="bullet-title">미국주식 트레이딩 드로어 (MaryTradingDrawer)</text>
+        <text x="14" y="24" class="bullet-desc">US-only 하드락, 6자리 PIN 잠금, 데모($50k)·토스·한투 Open API</text>
+
+        <circle cx="4" cy="40" r="3" fill="#13c2c2"/>
+        <text x="14" y="44" class="bullet-title">전역 개인화 알림함 드로어 (MaryNotificationDrawer)</text>
+        <text x="14" y="58" class="bullet-desc">최대 60건 보관, 90일 TTL, 읽음 상태 동기화 및 메시지 딥링크 이동</text>
+
+        <circle cx="4" cy="74" r="3" fill="#13c2c2"/>
+        <text x="14" y="78" class="bullet-title">음성 대화 (MaryVoiceOverlay) &amp; 인사이트 드로어</text>
+        <text x="14" y="92" class="bullet-desc">한/영 STT·TTS, 블루투스 키 연동, 일 1,000원 가드 &amp; 최근 메모·피드</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ========================================================================= -->
+  <!-- LAYER 2: 7대 핵심 워크스페이스 탭 (Middle Section) -->
+  <!-- ========================================================================= -->
+  <g transform="translate(24, 320)">
+    <!-- Layer Label -->
+    <rect x="0" y="0" width="6" height="18" rx="3" fill="#52c41a"/>
+    <text x="14" y="14" class="layer-label">LAYER 2 · 7대 핵심 워크스페이스 탭 (URL ?tab= 및 sessionStorage 상태 영속)</text>
+
+    <!-- 7 Columns Grid -->
+    <!-- Tab 1: 대화 (chat) (x:0, w:212) -->
+    <g transform="translate(0, 26)">
+      <rect width="212" height="536" rx="8" fill="#ffffff" stroke="#91caff" stroke-width="1.5" filter="url(#shadowSm)"/>
+      <path d="M 0 8 Q 0 0 8 0 L 204 0 Q 212 0 212 8 L 212 40 L 0 40 Z" fill="#e6f4ff"/>
+      <rect x="10" y="8" width="24" height="24" rx="6" fill="#1677ff"/>
+      <text x="22" y="24" font-family="sans-serif" font-weight="900" font-size="12" fill="#ffffff" text-anchor="middle">1</text>
+      <text x="40" y="24" class="card-title" fill="#0958d9">대화 (chat)</text>
+      <text x="135" y="24" class="card-sub" fill="#1677ff">Core Hub</text>
+
+      <g transform="translate(10, 52)">
+        <text x="0" y="12" class="bullet-title" fill="#1677ff">첫화면 랜딩 &amp; 지연 스레드</text>
+        <text x="0" y="26" class="bullet-desc">chatLandingModel: 포트폴리오·</text>
+        <text x="0" y="38" class="bullet-desc">전략 후속 카드, 최근대화 프리뷰</text>
+        <text x="0" y="50" class="bullet-desc">첫 질의 발화 시점 DB 스레드 생성</text>
+
+        <line x1="0" y1="62" x2="192" y2="62" stroke="#f1f5f9" stroke-width="1"/>
+
+        <text x="0" y="76" class="bullet-title" fill="#1677ff">타이포 &amp; 컴포저 구조</text>
+        <text x="0" y="90" class="bullet-desc">16.2px 가독 폰트 확대 (PR #93)</text>
+        <text x="0" y="102" class="bullet-desc">999px 전역 둥근 필 칩 통일</text>
+        <text x="0" y="114" class="bullet-desc">입력창 좌측 외부 음성 버튼 분리</text>
+
+        <line x1="0" y1="126" x2="192" y2="126" stroke="#f1f5f9" stroke-width="1"/>
+
+        <text x="0" y="140" class="bullet-title" fill="#1677ff">10종 인라인 인터랙티브 위젯</text>
+        <text x="0" y="154" class="bullet-desc">시세·차트·재무·비교·수급·컨센서스</text>
+        <text x="0" y="166" class="bullet-desc">공시·관심종목보드·계산기</text>
+        <text x="0" y="178" class="bullet-desc">본문 스트림보다 ~0.5초 선노출</text>
+
+        <line x1="0" y1="190" x2="192" y2="190" stroke="#f1f5f9" stroke-width="1"/>
+
+        <text x="0" y="204" class="bullet-title" fill="#1677ff">메신저형 4줄 요약 말풍선</text>
+        <text x="0" y="218" class="bullet-desc">본문과 하단 요약 블록 자동 분리</text>
+        <text x="0" y="230" class="bullet-desc">비분석·조회실패 시 요약 자동 억제</text>
+        <text x="0" y="242" class="bullet-desc">말풍선 외부 독립 음성 재생 버튼</text>
+
+        <line x1="0" y1="254" x2="192" y2="254" stroke="#f1f5f9" stroke-width="1"/>
+
+        <text x="0" y="268" class="bullet-title" fill="#1677ff">피드백 &amp; 거버넌스</text>
+        <text x="0" y="282" class="bullet-desc">3단 피드백 (+2 / +1 / -1)</text>
+        <text x="0" y="294" class="bullet-desc">하단 사용 모델 1줄 표기 (__model:*)</text>
+        <text x="0" y="306" class="bullet-desc">평단가/수량 역유도 차단 가드레일</text>
+        <text x="0" y="318" class="bullet-desc">스레드 다중 선택 일괄 삭제</text>
+
+        <line x1="0" y1="330" x2="192" y2="330" stroke="#f1f5f9" stroke-width="1"/>
+
+        <text x="0" y="344" class="bullet-title" fill="#1677ff">시간대별 선제 체크인</text>
+        <text x="0" y="358" class="bullet-desc">장전·장중·장마감 맞춤 브리핑</text>
+        <text x="0" y="370" class="bullet-desc">관심종목 실시간 보드 자동 연동</text>
+      </g>
+    </g>
+
+    <!-- Tab 2: 발견 (discover) (x:223, w:212) -->
+    <g transform="translate(223, 26)">
+      <rect width="212" height="536" rx="8" fill="#ffffff" stroke="#b7eb8f" stroke-width="1.5" filter="url(#shadowSm)"/>
+      <path d="M 0 8 Q 0 0 8 0 L 204 0 Q 212 0 212 8 L 212 40 L 0 40 Z" fill="#f6ffed"/>
+      <rect x="10" y="8" width="24" height="24" rx="6" fill="#52c41a"/>
+      <text x="22" y="24" font-family="sans-serif" font-weight="900" font-size="12" fill="#ffffff" text-anchor="middle">2</text>
+      <text x="40" y="24" class="card-title" fill="#237804">발견 (discover)</text>
+      <text x="145" y="24" class="card-sub" fill="#52c41a">Market</text>
+
+      <g transform="translate(10, 52)">
+        <text x="0" y="12" class="bullet-title" fill="#237804">시간대 자동 마켓 펄스</text>
+        <text x="0" y="26" class="bullet-desc">09:00~17:59 (주간 KR_DAY):</text>
+        <text x="0" y="38" class="bullet-desc">KOSPI · KOSDAQ + 국내주식 기본</text>
+        <text x="0" y="50" class="bullet-desc">18:00~08:59 (야간 US_NIGHT):</text>
+        <text x="0" y="62" class="bullet-desc">S&amp;P500·나스닥·SOX + 미국주식</text>
+
+        <line x1="0" y1="74" x2="192" y2="74" stroke="#f1f5f9" stroke-width="1"/>
+
+        <text x="0" y="88" class="bullet-title" fill="#237804">Top-200 초경량 로고</text>
+        <text x="0" y="102" class="bullet-desc">코스피/코스닥/나스닥/NYSE</text>
+        <text x="0" y="114" class="bullet-desc">시총 상위 50개씩 56×56 WebP</text>
+        <text x="0" y="126" class="bullet-desc">총 200종목 (~1KB) 로컬 보관</text>
+
+        <line x1="0" y1="138" x2="192" y2="138" stroke="#f1f5f9" stroke-width="1"/>
+
+        <text x="0" y="152" class="bullet-title" fill="#237804">4대 실시간 랭킹</text>
+        <text x="0" y="166" class="bullet-desc">시총 상위 · 거래 활발 · 급등 · 급락</text>
+        <text x="0" y="178" class="bullet-desc">30초 자동 갱신 + 슬림 순위 열</text>
+        <text x="0" y="190" class="bullet-desc">시장 등락 분포 바 (Breadth)</text>
+
+        <line x1="0" y1="202" x2="192" y2="202" stroke="#f1f5f9" stroke-width="1"/>
+
+        <text x="0" y="216" class="bullet-title" fill="#237804">통합 검색 &amp; 차트 드로어</text>
+        <text x="0" y="230" class="bullet-desc">1,408개 상장사 마스터 검색</text>
+        <text x="0" y="242" class="bullet-desc">우측 종목 차트 드로어 즉시 오픈</text>
+        <text x="0" y="254" class="bullet-desc">관심종목 원탭 토글 &amp; 대화 연계</text>
+
+        <line x1="0" y1="266" x2="192" y2="266" stroke="#f1f5f9" stroke-width="1"/>
+
+        <text x="0" y="280" class="bullet-title" fill="#237804">3대 스코프 탭</text>
+        <text x="0" y="294" class="bullet-desc">국내 주식 · 미국 주식 · 국내 ETF</text>
+        <text x="0" y="306" class="bullet-desc">야간 시 미국 스코프 우선 자동 선택</text>
+      </g>
+    </g>
+
+    <!-- Tab 3: 피드 (feed) (x:446, w:212) -->
+    <g transform="translate(446, 26)">
+      <rect width="212" height="536" rx="8" fill="#ffffff" stroke="#ffd591" stroke-width="1.5" filter="url(#shadowSm)"/>
+      <path d="M 0 8 Q 0 0 8 0 L 204 0 Q 212 0 212 8 L 212 40 L 0 40 Z" fill="#fff7e6"/>
+      <rect x="10" y="8" width="24" height="24" rx="6" fill="#fa8c16"/>
+      <text x="22" y="24" font-family="sans-serif" font-weight="900" font-size="12" fill="#ffffff" text-anchor="middle">3</text>
+      <text x="40" y="24" class="card-title" fill="#d46b08">피드 (feed)</text>
+      <text x="145" y="24" class="card-sub" fill="#fa8c16">Curated</text>
+
+      <g transform="translate(10, 52)">
+        <text x="0" y="12" class="bullet-title" fill="#d46b08">국내 언론사 우선 정렬 (PR #99)</text>
+        <text x="0" y="26" class="bullet-desc">feedLocale 판별 기반 국내 우선</text>
+        <text x="0" y="38" class="bullet-desc">외신 한국어 번역 요약 캐싱</text>
+        <text x="0" y="50" class="bullet-desc">(mary_stock_cache 슬롯 연동)</text>
+
+        <line x1="0" y1="62" x2="192" y2="62" stroke="#f1f5f9" stroke-width="1"/>
+
+        <text x="0" y="76" class="bullet-title" fill="#d46b08">개인화 3대 뉴스 피드</text>
+        <text x="0" y="90" class="bullet-desc">관심종목 뉴스 (watchlist_news)</text>
+        <text x="0" y="102" class="bullet-desc">시장 펄스 (market_pulse)</text>
+        <text x="0" y="114" class="bullet-desc">메리 인사이트 (mary_insight)</text>
+        <text x="0" y="126" class="bullet-desc">최대 20건 병합 · 14일 TTL</text>
+
+        <line x1="0" y1="138" x2="192" y2="138" stroke="#f1f5f9" stroke-width="1"/>
+
+        <text x="0" y="152" class="bullet-title" fill="#d46b08">원형 심볼 &amp; 툴팁</text>
+        <text x="0" y="166" class="bullet-desc">CompanySymbolAvatar 프로필</text>
+        <text x="0" y="178" class="bullet-desc">제목 우측 i 안내 툴팁 (큐레이션)</text>
+        <text x="0" y="190" class="bullet-desc">감성/카테고리 칩 표기</text>
+
+        <line x1="0" y1="202" x2="192" y2="202" stroke="#f1f5f9" stroke-width="1"/>
+
+        <text x="0" y="216" class="bullet-title" fill="#d46b08">2단 액션 &amp; 미확인 배지</text>
+        <text x="0" y="230" class="bullet-desc">카드 본체 원문 기사 직접 연결</text>
+        <text x="0" y="242" class="bullet-desc">하단 '메모하기' · '메리와 논의'</text>
+        <text x="0" y="254" class="bullet-desc">진입 즉시 미확인 배지 자동 소거</text>
+      </g>
+    </g>
+
+    <!-- Tab 4: 투자 전략 (strategy) (x:669, w:212) -->
+    <g transform="translate(669, 26)">
+      <rect width="212" height="536" rx="8" fill="#ffffff" stroke="#d3adf7" stroke-width="1.5" filter="url(#shadowSm)"/>
+      <path d="M 0 8 Q 0 0 8 0 L 204 0 Q 212 0 212 8 L 212 40 L 0 40 Z" fill="#f9f0ff"/>
+      <rect x="10" y="8" width="24" height="24" rx="6" fill="#722ed1"/>
+      <text x="22" y="24" font-family="sans-serif" font-weight="900" font-size="12" fill="#ffffff" text-anchor="middle">4</text>
+      <text x="40" y="24" class="card-title" fill="#531dab">투자 전략</text>
+      <text x="145" y="24" class="card-sub" fill="#722ed1">Strategy</text>
+
+      <g transform="translate(10, 52)">
+        <text x="0" y="12" class="bullet-title" fill="#531dab">대가 전략 (GURU_AI)</text>
+        <text x="0" y="26" class="bullet-desc">SEC 13F 공시 기반 대가 포트폴리오</text>
+        <text x="0" y="38" class="bullet-desc">가로 스크롤 캐러셀 UI</text>
+        <text x="0" y="50" class="bullet-desc">공시 시차(최대 45일 Lag) i 툴팁</text>
+
+        <line x1="0" y1="62" x2="192" y2="62" stroke="#f1f5f9" stroke-width="1"/>
+
+        <text x="0" y="76" class="bullet-title" fill="#531dab">직접 만들기 (SELF_TRADING)</text>
+        <text x="0" y="90" class="bullet-desc">자연어 ➔ 정량 퀀트 룰 변환</text>
+        <text x="0" y="102" class="bullet-desc">nlRuleParser: PER·ROE·골든크로스</text>
+        <text x="0" y="114" class="bullet-desc">익절/손절 슬라이더 미세 조정</text>
+
+        <line x1="0" y1="126" x2="192" y2="126" stroke="#f1f5f9" stroke-width="1"/>
+
+        <text x="0" y="140" class="bullet-title" fill="#531dab">내 전략 보관함 &amp; 부합 카드</text>
+        <text x="0" y="154" class="bullet-desc">오늘 조건 부합 종목 카드 표기</text>
+        <text x="0" y="166" class="bullet-desc">KR/US 구분 · 알림 토글 · 복제/삭제</text>
+        <text x="0" y="178" class="bullet-desc">180일 TTL 저장 보관</text>
+
+        <line x1="0" y1="190" x2="192" y2="190" stroke="#f1f5f9" stroke-width="1"/>
+
+        <text x="0" y="204" class="bullet-title" fill="#531dab">반응형 백테스트 차트 (PR #94)</text>
+        <text x="0" y="218" class="bullet-desc">StrategyBacktestChart 컨테이너</text>
+        <text x="0" y="230" class="bullet-desc">총수익률 · 연평균CAGR · MDD</text>
+        <text x="0" y="242" class="bullet-desc">수수료/슬리피지 반영 · 서브탭 Back</text>
+
+        <line x1="0" y1="254" x2="192" y2="254" stroke="#f1f5f9" stroke-width="1"/>
+
+        <text x="0" y="268" class="bullet-title" fill="#531dab">컴플라이언스 가드레일 (PR #96)</text>
+        <text x="0" y="282" class="bullet-desc">은어·우회 1:1 보유상담 차단</text>
+        <text x="0" y="294" class="bullet-desc">후속 평단가 역유도 전면 금지</text>
+      </g>
+    </g>
+
+    <!-- Tab 5: 포트폴리오 (portfolio) (x:892, w:212) -->
+    <g transform="translate(892, 26)">
+      <rect width="212" height="536" rx="8" fill="#ffffff" stroke="#87e8de" stroke-width="1.5" filter="url(#shadowSm)"/>
+      <path d="M 0 8 Q 0 0 8 0 L 204 0 Q 212 0 212 8 L 212 40 L 0 40 Z" fill="#e6fffb"/>
+      <rect x="10" y="8" width="24" height="24" rx="6" fill="#13c2c2"/>
+      <text x="22" y="24" font-family="sans-serif" font-weight="900" font-size="12" fill="#ffffff" text-anchor="middle">5</text>
+      <text x="40" y="24" class="card-title" fill="#006d75">포트폴리오</text>
+      <text x="140" y="24" class="card-sub" fill="#13c2c2">Portfolio</text>
+
+      <g transform="translate(10, 52)">
+        <text x="0" y="12" class="bullet-title" fill="#006d75">2탭 워크스페이스 분리</text>
+        <text x="0" y="26" class="bullet-desc">'자산 현황' / '퀀트 분석 &amp; 리밸런싱'</text>
+        <text x="0" y="38" class="bullet-desc">헤더 i 안내 툴팁화 (원칙 고지)</text>
+        <text x="0" y="50" class="bullet-desc">서브탭 인앱 History Back 완벽 연동</text>
+
+        <line x1="0" y1="62" x2="192" y2="62" stroke="#f1f5f9" stroke-width="1"/>
+
+        <text x="0" y="76" class="bullet-title" fill="#006d75">멀티모달 비전 OCR 캡처</text>
+        <text x="0" y="90" class="bullet-desc">증권앱 스크린샷 잔고 자동 파싱</text>
+        <text x="0" y="102" class="bullet-desc">원화표시 미장 단가 이상치 교정</text>
+        <text x="0" y="114" class="bullet-desc">[평가금] 1주단가 오인 나눗셈 보정</text>
+        <text x="0" y="126" class="bullet-desc">하단 바 가림 손익 역산 복원</text>
+
+        <line x1="0" y1="138" x2="192" y2="138" stroke="#f1f5f9" stroke-width="1"/>
+
+        <text x="0" y="152" class="bullet-title" fill="#006d75">실시간 자가치유 (Self-Heal)</text>
+        <text x="0" y="166" class="bullet-desc">needsPortfolioLiveSelfHeal</text>
+        <text x="0" y="178" class="bullet-desc">과거 왜곡 스냅샷 조회 시 자동 수복</text>
+        <text x="0" y="190" class="bullet-desc">환율 정규화 도넛 비중 차트</text>
+
+        <line x1="0" y1="202" x2="192" y2="202" stroke="#f1f5f9" stroke-width="1"/>
+
+        <text x="0" y="216" class="bullet-title" fill="#006d75">도넛 차트 조건부 스크롤 (PR #98)</text>
+        <text x="0" y="230" class="bullet-desc">30종목 초과 시에만 범례 스크롤</text>
+        <text x="0" y="242" class="bullet-desc">모바일 터치 간섭 방지 최적화</text>
+
+        <line x1="0" y1="254" x2="192" y2="254" stroke="#f1f5f9" stroke-width="1"/>
+
+        <text x="0" y="268" class="bullet-title" fill="#006d75">정량 리밸런싱 시뮬레이션</text>
+        <text x="0" y="282" class="bullet-desc">투자 성향별 목표 비중 대조</text>
+        <text x="0" y="294" class="bullet-desc">자기책임 원칙·비자문 고지 확정</text>
+      </g>
+    </g>
+
+    <!-- Tab 6: 메모장 (notes) (x:1115, w:212) -->
+    <g transform="translate(1115, 26)">
+      <rect width="212" height="536" rx="8" fill="#ffffff" stroke="#ffadd2" stroke-width="1.5" filter="url(#shadowSm)"/>
+      <path d="M 0 8 Q 0 0 8 0 L 204 0 Q 212 0 212 8 L 212 40 L 0 40 Z" fill="#fff0f6"/>
+      <rect x="10" y="8" width="24" height="24" rx="6" fill="#eb2f96"/>
+      <text x="22" y="24" font-family="sans-serif" font-weight="900" font-size="12" fill="#ffffff" text-anchor="middle">6</text>
+      <text x="40" y="24" class="card-title" fill="#c41d7f">메모장 (notes)</text>
+      <text x="145" y="24" class="card-sub" fill="#eb2f96">Notes</text>
+
+      <g transform="translate(10, 52)">
+        <text x="0" y="12" class="bullet-title" fill="#c41d7f">3대 메모 통합 관리</text>
+        <text x="0" y="26" class="bullet-desc">대화 자동 요약 (mary_auto)</text>
+        <text x="0" y="38" class="bullet-desc">피드 기사 스크랩 (feed_clip)</text>
+        <text x="0" y="50" class="bullet-desc">직접 작성 메모 (user_note)</text>
+
+        <line x1="0" y1="62" x2="192" y2="62" stroke="#f1f5f9" stroke-width="1"/>
+
+        <text x="0" y="76" class="bullet-title" fill="#c41d7f">3대 필터 세그먼트</text>
+        <text x="0" y="90" class="bullet-desc">전체 · 상단고정 · 메리 자동기록</text>
+        <text x="0" y="102" class="bullet-desc">중요 노트 상단 핀(Pin) 고정</text>
+
+        <line x1="0" y1="114" x2="192" y2="114" stroke="#f1f5f9" stroke-width="1"/>
+
+        <text x="0" y="128" class="bullet-title" fill="#c41d7f">3줄 요약 &amp; 스마트 접기</text>
+        <text x="0" y="142" class="bullet-desc">extractNotePreview 핵심 요약</text>
+        <text x="0" y="154" class="bullet-desc">프라이머리 더보기/접기 토글</text>
+        <text x="0" y="166" class="bullet-desc">장문 본문 가독성 보존</text>
+
+        <line x1="0" y1="178" x2="192" y2="178" stroke="#f1f5f9" stroke-width="1"/>
+
+        <text x="0" y="192" class="bullet-title" fill="#c41d7f">180일 TTL 보관 정책</text>
+        <text x="0" y="206" class="bullet-desc">mary_notes 테이블 암호화 격리</text>
+        <text x="0" y="218" class="bullet-desc">대화 중 "기록해줘" 즉시 생성</text>
+      </g>
+    </g>
+
+    <!-- Tab 7: 설정 (settings) (x:1338, w:214) -->
+    <g transform="translate(1338, 26)">
+      <rect width="214" height="536" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#shadowSm)"/>
+      <path d="M 0 8 Q 0 0 8 0 L 206 0 Q 214 0 214 8 L 214 40 L 0 40 Z" fill="#f1f5f9"/>
+      <rect x="10" y="8" width="24" height="24" rx="6" fill="#475569"/>
+      <text x="22" y="24" font-family="sans-serif" font-weight="900" font-size="12" fill="#ffffff" text-anchor="middle">7</text>
+      <text x="40" y="24" class="card-title" fill="#1e293b">설정 (settings)</text>
+      <text x="145" y="24" class="card-sub" fill="#64748b">Settings</text>
+
+      <g transform="translate(10, 52)">
+        <text x="0" y="12" class="bullet-title" fill="#334155">관심종목 관리 (최대 20개)</text>
+        <text x="0" y="26" class="bullet-desc">인라인 종목 추가 &amp; 순서 이동</text>
+        <text x="0" y="38" class="bullet-desc">드래그/버튼 정렬 · 개별 삭제</text>
+        <text x="0" y="50" class="bullet-desc">피드/발견/알림과 실시간 연동</text>
+
+        <line x1="0" y1="62" x2="194" y2="62" stroke="#f1f5f9" stroke-width="1"/>
+
+        <text x="0" y="76" class="bullet-title" fill="#334155">기억된 투자 성향 (Memory)</text>
+        <text x="0" y="90" class="bullet-desc">memory_facts 최대 6개 추출 보관</text>
+        <text x="0" y="102" class="bullet-desc">대화 기반 선호 스타일 자동 학습</text>
+
+        <line x1="0" y1="114" x2="194" y2="114" stroke="#f1f5f9" stroke-width="1"/>
+
+        <text x="0" y="128" class="bullet-title" fill="#334155">테마 &amp; 인터페이스 제어</text>
+        <text x="0" y="142" class="bullet-desc">카톡 UI 모드 ↔ 기본 모드 전환</text>
+        <text x="0" y="154" class="bullet-desc">라이트 모드 ↔ 다크 모드 토글</text>
+        <text x="0" y="166" class="bullet-desc">KO / EN 언어 선택</text>
+
+        <line x1="0" y1="178" x2="194" y2="178" stroke="#f1f5f9" stroke-width="1"/>
+
+        <text x="0" y="192" class="bullet-title" fill="#334155">기기 보안 &amp; 데이터 파기</text>
+        <text x="0" y="206" class="bullet-desc">원클릭 기기 데이터 즉시 파기</text>
+        <text x="0" y="218" class="bullet-desc">PWA 캐시 재발급 및 재설치</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ========================================================================= -->
+  <!-- LAYER 3: 백엔드 데이터 코어, 가드레일, 오너 보관함 (Bottom Section) -->
+  <!-- ========================================================================= -->
+  <g transform="translate(24, 900)">
+    <!-- Layer Label -->
+    <rect x="0" y="0" width="6" height="18" rx="3" fill="#0958d9"/>
+    <text x="14" y="14" class="layer-label">LAYER 3 · 백엔드 데이터 코어 · 가드레일 &amp; 관측성 · 오너 전용 보관함</text>
+
+    <!-- Box 3-A: maryBrain & 가드레일 엔진 (x:0, w:500, h:156) -->
+    <g transform="translate(0, 26)">
+      <rect width="500" height="156" rx="10" fill="url(#cardGradWhite)" stroke="#cbd5e1" stroke-width="1.2" filter="url(#shadowSm)"/>
+      <path d="M 0 10 Q 0 0 10 0 L 490 0 Q 500 0 500 10 L 500 32 L 0 32 Z" fill="#e6f4ff"/>
+      <text x="14" y="21" class="sec-title" fill="#0958d9">04. maryBrain 코어 &amp; 3단 가드레일 (7-A/B/C)</text>
+      <rect x="424" y="6" width="62" height="18" rx="9" fill="#1677ff"/>
+      <text x="455" y="18" class="badge-text" text-anchor="middle">AI Brain</text>
+
+      <g transform="translate(14, 44)">
+        <circle cx="4" cy="6" r="3" fill="#1677ff"/>
+        <text x="14" y="10" class="bullet-title">단일 메인 두뇌 (Single Main Brain Architecture)</text>
+        <text x="14" y="23" class="bullet-desc">0번 라우터 + 1~4 전문 수집기 + Canonical Data Graph + 3단계 적응형 Grounding</text>
+
+        <circle cx="4" cy="38" r="3" fill="#1677ff"/>
+        <text x="14" y="42" class="bullet-title">런타임 7-A/7-B/7-C 가드레일 &amp; 컴플라이언스</text>
+        <text x="14" y="55" class="bullet-desc">자본시장법 제18조 준수 · 후속 질문 평단가/수량 역유도 차단 · 100% 면책 고지</text>
+
+        <circle cx="4" cy="70" r="3" fill="#1677ff"/>
+        <text x="14" y="74" class="bullet-title">LARA-QA 4단 자동 사후 품질 판정 (Q0~Q3)</text>
+        <text x="14" y="87" class="bullet-desc">Q0 무결성(30%) · Q1 컴플라이언스(25%) · Q2 근거(25%) · Q3 품질추정(20%) Hard-Veto</text>
+
+        <g transform="translate(0, 96)">
+          <rect x="0" y="0" width="472" height="18" rx="4" fill="#f8fafc" stroke="#e2e8f0"/>
+          <text x="8" y="13" class="bullet-desc" fill="#475569">금융 코어 연동 (A2A): 원격 엔드포인트 비식별 금융 질의만 전송</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Box 3-B: 데이터베이스 & 보안 격리 (x:516, w:490, h:156) -->
+    <g transform="translate(516, 26)">
+      <rect width="490" height="156" rx="10" fill="url(#cardGradWhite)" stroke="#cbd5e1" stroke-width="1.2" filter="url(#shadowSm)"/>
+      <path d="M 0 10 Q 0 0 10 0 L 480 0 Q 490 0 490 10 L 490 32 L 0 32 Z" fill="#f0fdf4"/>
+      <text x="14" y="21" class="sec-title" fill="#166534">05. 전용 DB &amp; 멀티-TTL 자동 파기 수명주기</text>
+      <rect x="408" y="6" width="68" height="18" rx="9" fill="#16a34a"/>
+      <text x="442" y="18" class="badge-text" text-anchor="middle">Database</text>
+
+      <g transform="translate(14, 44)">
+        <circle cx="4" cy="6" r="3" fill="#16a34a"/>
+        <text x="14" y="10" class="bullet-title">14개 SQL 마이그레이션 테이블</text>
+        <text x="14" y="23" class="bullet-desc">대화·스레드·피드·전략·포트폴리오·알림함(mary_notifications 90일 TTL)</text>
+
+        <circle cx="4" cy="38" r="3" fill="#16a34a"/>
+        <text x="14" y="42" class="bullet-title">스키마 물리 격리 (public vs pii_vault)</text>
+        <text x="14" y="55" class="bullet-desc">브로커 시크릿·API 키 AES-256-GCM 암호화 보관 + RLS 강제</text>
+
+        <circle cx="4" cy="70" r="3" fill="#16a34a"/>
+        <text x="14" y="74" class="bullet-title">일일 자동 파기 Cron 배치 (18:00 UTC / 03:00 KST)</text>
+        <text x="14" y="87" class="bullet-desc">피드 14일, 대화 90일, 메모 180일, 캐시 7일(슬롯 3m~24h) 만료 영구 삭제</text>
+
+        <g transform="translate(0, 96)">
+          <rect x="0" y="0" width="462" height="18" rx="4" fill="#f8fafc" stroke="#e2e8f0"/>
+          <text x="8" y="13" class="bullet-desc" fill="#475569">Amplitude HTTP V2 (28종 금지키 차단) &amp; Langfuse 비식별 트레이싱 연동</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Box 3-C: 오너 보관함 & 프라이빗 포털 (x:1022, w:530, h:156) -->
+    <g transform="translate(1022, 26)">
+      <rect width="530" height="156" rx="10" fill="url(#cardGradWhite)" stroke="#cbd5e1" stroke-width="1.2" filter="url(#shadowSm)"/>
+      <path d="M 0 10 Q 0 0 10 0 L 520 0 Q 530 0 530 10 L 530 32 L 0 32 Z" fill="#fffbe6"/>
+      <text x="14" y="21" class="sec-title" fill="#b45309">06. 오너 전용 보관함 &amp; 프라이빗 포털</text>
+      <rect x="444" y="6" width="72" height="18" rx="9" fill="#d97706"/>
+      <text x="480" y="18" class="badge-text" text-anchor="middle">Owner Vault</text>
+
+      <g transform="translate(14, 44)">
+        <circle cx="4" cy="6" r="3" fill="#d97706"/>
+        <text x="14" y="10" class="bullet-title">오너 전용 아티팩트 보관함 (/artifect)</text>
+        <text x="14" y="23" class="bullet-desc">2,400문항 골든 질문지 풀 &amp; 100문항 프로덕션 실전 벤치마크 리포트</text>
+
+        <circle cx="4" cy="38" r="3" fill="#d97706"/>
+        <text x="14" y="42" class="bullet-title">프라이빗 프로덕트 허브 (Ant Design 콘솔)</text>
+        <text x="14" y="55" class="bullet-desc">12개 문서·비용·RAG용량·세션이력 통합 열람 / WebCrypto AES-256-GCM 암호화 Pages</text>
+
+        <circle cx="4" cy="70" r="3" fill="#d97706"/>
+        <text x="14" y="74" class="bullet-title">Zero-PII 세션로그 포털 웹사이트</text>
+        <text x="14" y="87" class="bullet-desc">56개 세션로그 연대기 · GitHub Pages 자동 동기화 · Gemini 3.8 Flash 최적화</text>
+
+        <g transform="translate(0, 96)">
+          <rect x="0" y="0" width="502" height="18" rx="4" fill="#f8fafc" stroke="#e2e8f0"/>
+          <text x="8" y="13" class="bullet-desc" fill="#475569">접근 보안: type="text" 마스킹으로 macOS Secure Input 충돌 원천 회피</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- Bottom Footer Line -->
+  <g transform="translate(24, 1196)">
+    <line x1="0" y1="0" x2="1552" y2="0" stroke="#cbd5e1" stroke-width="1"/>
+    <text x="0" y="20" class="bullet-desc" fill="#64748b">MARY Private Financial Agent · Information Architecture Diagram · SSOT Canonical Spec · Zero-PII Verified</text>
+    <text x="1552" y="20" class="bullet-desc" fill="#64748b" text-anchor="end">Generated for Product Hub #01-ia · Vector SVG &amp; Retina PNG</text>
+  </g>
+</svg>
