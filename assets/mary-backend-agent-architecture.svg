@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1480 1520" width="1480" height="1520" fill="#334155">
+  <defs>
+    <style>
+      .title { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", "Segoe UI", Roboto, sans-serif; font-weight: 800; font-size: 25px; fill: #ffffff; letter-spacing: -0.5px; }
+      .subtitle { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", "Segoe UI", Roboto, sans-serif; font-weight: 500; font-size: 13px; fill: #94a3b8; }
+      .badge-text { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", "Segoe UI", Roboto, sans-serif; font-weight: 700; font-size: 11px; fill: #ffffff; }
+      .sec-title { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", "Segoe UI", Roboto, sans-serif; font-weight: 800; font-size: 15px; letter-spacing: -0.3px; }
+      .card-title { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", "Segoe UI", Roboto, sans-serif; font-weight: 700; font-size: 14px; letter-spacing: -0.2px; }
+      .card-sub { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", "Segoe UI", Roboto, sans-serif; font-weight: 600; font-size: 11.5px; fill: #475569; }
+      .body-bold { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", "Segoe UI", Roboto, sans-serif; font-weight: 700; font-size: 12.5px; }
+      .body-text { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", "Segoe UI", Roboto, sans-serif; font-weight: 400; font-size: 11.8px; }
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-weight: 600; font-size: 11px; }
+      .pill-text { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", "Segoe UI", Roboto, sans-serif; font-weight: 700; font-size: 10.5px; }
+      .arrow-label { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", "Segoe UI", Roboto, sans-serif; font-weight: 700; font-size: 11px; }
+    </style>
+
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+
+    <linearGradient id="headerGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="55%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <linearGradient id="brainGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e3a5f"/>
+    </linearGradient>
+
+    <filter id="shadow" x="-3%" y="-3%" width="106%" height="108%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.06"/>
+    </filter>
+    <filter id="shadowStrong" x="-4%" y="-4%" width="108%" height="110%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.12"/>
+    </filter>
+
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8.5 5 L 0 8.5 z" fill="#2563eb"/>
+    </marker>
+    <marker id="arrowEmerald" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8.5 5 L 0 8.5 z" fill="#059669"/>
+    </marker>
+    <marker id="arrowPurple" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8.5 5 L 0 8.5 z" fill="#7c3aed"/>
+    </marker>
+    <marker id="arrowSlate" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8.5 5 L 0 8.5 z" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1480" height="1520" fill="url(#bgGrad)"/>
+
+  <!-- ==================== HEADER (y: 22..114) ==================== -->
+  <g transform="translate(28, 22)">
+    <rect width="1424" height="92" rx="16" fill="url(#headerGrad)" filter="url(#shadowStrong)"/>
+    <rect x="0" y="0" width="1424" height="4" rx="2" fill="#3b82f6"/>
+    <text x="28" y="42" class="title">MARY 통합 백엔드 · AI 에이전트 · 멀티-TTL 데이터 아키텍처</text>
+    <text x="28" y="68" class="subtitle">API 게이트웨이 &amp; 인증/마스킹 ➔ 0~4번 결정론 수집기 &amp; Canonical Graph ➔ maryBrain (단일 스트리밍) ➔ 멀티-TTL 캐시 · DB 격리 · after() 비동기 평가</text>
+
+    <g transform="translate(920, 29)">
+      <rect x="0" y="0" width="114" height="32" rx="16" fill="#1d4ed8"/>
+      <text x="57" y="20" class="badge-text" text-anchor="middle">턴당 LLM 단 1회</text>
+      <rect x="122" y="0" width="120" height="32" rx="16" fill="#0f766e"/>
+      <text x="182" y="20" class="badge-text" text-anchor="middle">슬롯 분리 멀티-TTL</text>
+      <rect x="250" y="0" width="124" height="32" rx="16" fill="#7c3aed"/>
+      <text x="312" y="20" class="badge-text" text-anchor="middle">Zero-PII · FORCE RLS</text>
+      <rect x="382" y="0" width="106" height="32" rx="16" fill="#b45309"/>
+      <text x="435" y="20" class="badge-text" text-anchor="middle">0ms 섀도우 루브릭</text>
+    </g>
+  </g>
+
+  <!-- ==================== TIER 1: API GATEWAY & ENTRY GUARD (y: 132..326) ==================== -->
+  <g transform="translate(28, 132)">
+    <rect width="1424" height="194" rx="14" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#shadow)"/>
+    <rect x="0" y="0" width="6" height="194" rx="3" fill="#2563eb"/>
+    <text x="24" y="30" class="sec-title" fill="#1e40af">TIER 1 · API 게이트웨이 · 인증 격리 · 0번 의도 라우팅 &amp; 7-A 사전 방어 (Next.js App Router /api/mary/*)</text>
+
+    <!-- Box 1: Auth & Rate Limit -->
+    <g transform="translate(24, 48)">
+      <rect width="440" height="126" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+      <rect x="14" y="12" width="104" height="22" rx="11" fill="#dbeafe"/>
+      <text x="66" y="27" class="pill-text" fill="#1d4ed8" text-anchor="middle">① 인증 · 기기 격리</text>
+      <text x="128" y="28" class="card-title" fill="#0f172a">세션 검증 · Rate Limit · 예산 가드</text>
+      <text x="14" y="54" class="body-text">• 무로그인 HMAC 서명 쿠키(<tspan class="mono">mary_uid</tspan>) + <tspan class="mono">authChecked</tspan> 게이트</text>
+      <text x="14" y="74" class="body-text">• <tspan class="mono">mary_rate_limits</tspan> 분당 API 버킷 방어 (원시 IP 미저장)</text>
+      <text x="14" y="94" class="body-text">• 음성 요청 시 <tspan class="mono">reserveVoiceBudget()</tspan> 일 1,000원 사전 예약</text>
+      <text x="14" y="114" class="body-text">• 미국주식 주문 시 6자리 PIN 검증 후 서버 메모리 한정 복호화</text>
+    </g>
+
+    <!-- Box 2: PII Masking & 7-A & 0 Router -->
+    <g transform="translate(480, 48)">
+      <rect width="470" height="126" rx="10" fill="#fef2f2" stroke="#fecaca" stroke-width="1.2"/>
+      <rect x="14" y="12" width="122" height="22" rx="11" fill="#fee2e2"/>
+      <text x="75" y="27" class="pill-text" fill="#b91c1c" text-anchor="middle">② 마스킹 · 7-A · 0번</text>
+      <text x="146" y="28" class="card-title" fill="#0f172a">입력 정화 · 7-A 사전방어 · 0번 라우터</text>
+      <text x="14" y="54" class="body-text">• 입구 PII 마스킹(주민·계좌·전화·IP) + <tspan class="mono">7-A</tspan> 1:1 매매유도/5·6번 차단</text>
+      <text x="14" y="74" class="body-text">• <tspan class="mono">0번 supervisorPlanner</tspan>: 다중 의도 분해 + 6종 출력 포맷 배정</text>
+      <text x="14" y="94" class="body-text">• <tspan class="mono">tickerGuard</tspan>: <tspan class="mono">RSI·CB·BW·MSCI·CMA·GAUZ</tspan> 티커 오인 차단</text>
+      <text x="14" y="114" class="body-text">• 적응형 Grounding 정책: <tspan class="body-bold">Type A</tspan>(생략) / <tspan class="body-bold">Type B</tspan>(보충) / <tspan class="body-bold">Type C</tspan>(웹검증)</text>
+    </g>
+
+    <!-- Box 3: Domain Endpoints -->
+    <g transform="translate(966, 48)">
+      <rect width="434" height="126" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+      <rect x="14" y="12" width="110" height="22" rx="11" fill="#e0e7ff"/>
+      <text x="69" y="27" class="pill-text" fill="#4338ca" text-anchor="middle">③ 도메인 API 라우트</text>
+      <text x="134" y="28" class="card-title" fill="#0f172a">실시간 · 비대화 엔드포인트</text>
+      <text x="14" y="54" class="body-text">• <tspan class="mono">/api/mary/chat</tspan>: SSE 스트리밍 (위젯 선노출 + 4줄 요약 분리)</text>
+      <text x="14" y="74" class="body-text">• <tspan class="mono">/discover</tspan> (20s 캐시·KST 주/야간) · <tspan class="mono">/feed</tspan> (뉴스 3 : SNS 1)</text>
+      <text x="14" y="94" class="body-text">• <tspan class="mono">/portfolio</tspan>·<tspan class="mono">/strategy</tspan>: 비전 OCR 자가치유 · 백테스트 엔진</text>
+      <text x="14" y="114" class="body-text">• <tspan class="mono">/notifications</tspan> (60건/90일) · <tspan class="mono">/voice/*</tspan> · <tspan class="mono">/broker/*</tspan></text>
+    </g>
+  </g>
+
+  <!-- Arrow Tier 1 -> Tier 2 -->
+  <line x1="740" y1="326" x2="740" y2="358" stroke="#2563eb" stroke-width="2.5" marker-end="url(#arrowBlue)"/>
+  <rect x="570" y="331" width="340" height="20" rx="10" fill="#eff6ff" stroke="#bfdbfe"/>
+  <text x="740" y="345" class="arrow-label" text-anchor="middle" fill="#1d4ed8">병렬 비-LLM 결정론 파이프라인 호출 (LLM 0회 · ≤ 200ms)</text>
+
+  <!-- ==================== TIER 2: DETERMINISTIC COLLECTORS & CANONICAL GRAPH (y: 362..682) ==================== -->
+  <g transform="translate(28, 362)">
+    <rect width="1424" height="320" rx="14" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#shadow)"/>
+    <rect x="0" y="0" width="6" height="320" rx="3" fill="#059669"/>
+    <text x="24" y="30" class="sec-title" fill="#065f46">TIER 2 · 1~4번 결정론 수집기 군단 &amp; Canonical Data Graph (비-LLM 순수 TypeScript 팩트 조인 계층)</text>
+
+    <!-- 4 Collector Cards (330px wide each, 14px gap) -->
+    <!-- #1 Market -->
+    <g transform="translate(24, 48)">
+      <rect width="332" height="148" rx="10" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1.2"/>
+      <rect x="12" y="12" width="52" height="20" rx="10" fill="#16a34a"/>
+      <text x="38" y="26" class="pill-text" fill="#ffffff" text-anchor="middle">1번</text>
+      <text x="72" y="27" class="card-title" fill="#0f172a">시세·차트·수급 수집기</text>
+      <text x="12" y="48" class="card-sub"><tspan class="mono">liveMarketData.ts</tspan> · <tspan class="mono">indicators.ts</tspan></text>
+      <text x="12" y="72" class="body-text">• KRX / 미국 실시간 시세 (1글자 <tspan class="mono">U</tspan>·Yahoo 폴백)</text>
+      <text x="12" y="92" class="body-text">• 일·주·월·분봉 캔들 &amp; 5일 외국인/기관 수급</text>
+      <text x="12" y="112" class="body-text">• Wilder <tspan class="mono">RSI(14)</tspan> · <tspan class="mono">MACD</tspan> · <tspan class="mono">볼린저 %B</tspan> 실측</text>
+      <text x="12" y="134" class="body-bold" fill="#15803d">⏱ ~180ms (캐시 시 ~10ms) · LLM 0회</text>
+    </g>
+
+    <!-- #2 OpenDART -->
+    <g transform="translate(372, 48)">
+      <rect width="332" height="148" rx="10" fill="#f0f9ff" stroke="#bae6fd" stroke-width="1.2"/>
+      <rect x="12" y="12" width="52" height="20" rx="10" fill="#0284c7"/>
+      <text x="38" y="26" class="pill-text" fill="#ffffff" text-anchor="middle">2번</text>
+      <text x="72" y="27" class="card-title" fill="#0f172a">OpenDART 재무·공시</text>
+      <text x="12" y="48" class="card-sub"><tspan class="mono">dartCoreBridge.ts</tspan> · 원천 재무</text>
+      <text x="12" y="72" class="body-text">• 금감원 확정 분기/연간 매출·영업이익(조·억원)</text>
+      <text x="12" y="92" class="body-text">• 원천 <tspan class="mono">EPS·BPS·DPS</tspan> &amp; 증권사 컨센서스 격리</text>
+      <text x="12" y="112" class="body-text">• 유증·CB·BW·소송 등 수시 전자공시 수집</text>
+      <text x="12" y="134" class="body-bold" fill="#0369a1">⏱ 24h / 1h 독립 슬롯 보존 · LLM 0회</text>
+    </g>
+
+    <!-- #3 News & SNS -->
+    <g transform="translate(720, 48)">
+      <rect width="332" height="148" rx="10" fill="#fffbeb" stroke="#fde68a" stroke-width="1.2"/>
+      <rect x="12" y="12" width="52" height="20" rx="10" fill="#d97706"/>
+      <text x="38" y="26" class="pill-text" fill="#ffffff" text-anchor="middle">3번</text>
+      <text x="72" y="27" class="card-title" fill="#0f172a">뉴스 · SNS(3:1) 모멘텀</text>
+      <text x="12" y="48" class="card-sub"><tspan class="mono">newsSentimentSubagent</tspan> · <tspan class="mono">sharedFeed</tspan></text>
+      <text x="12" y="72" class="body-text">• 경제지 실시간 보도 + X·Reddit·종토방·증권플러스</text>
+      <text x="12" y="92" class="body-text">• 긍정 / 중립 / 경계 모멘텀 자동 분류</text>
+      <text x="12" y="112" class="body-text">• <tspan class="mono">7-B</tspan> 스팸·스탁론·찌라시·중복 제거 통과분만 적재</text>
+      <text x="12" y="134" class="body-bold" fill="#b45309">⏱ 30m / 60m TTL · 공용풀 7일</text>
+    </g>
+
+    <!-- #4 Knowledge RAG -->
+    <g transform="translate(1068, 48)">
+      <rect width="332" height="148" rx="10" fill="#f5f3ff" stroke="#ddd6fe" stroke-width="1.2"/>
+      <rect x="12" y="12" width="52" height="20" rx="10" fill="#7c3aed"/>
+      <text x="38" y="26" class="pill-text" fill="#ffffff" text-anchor="middle">4번</text>
+      <text x="72" y="27" class="card-title" fill="#0f172a">16대 정통 금융 RAG</text>
+      <text x="12" y="48" class="card-sub"><tspan class="mono">institutionalKB</tspan> · <tspan class="mono">conflictResolver</tspan></text>
+      <text x="12" y="72" class="body-text">• 세법·절세·거시·채권·파생 등 16대 도메인 ~300선</text>
+      <text x="12" y="92" class="body-text">• 인프로세스 메모리 상주 (외부 네트워크 조회 0회)</text>
+      <text x="12" y="112" class="body-text">• Tier-1 법령 우선 ➔ 최신 시행일 충돌 자동 중재</text>
+      <text x="12" y="134" class="body-bold" fill="#6d28d9">⏱ ≤ 2ms · API 비용 0원 상시 공급</text>
+    </g>
+
+    <!-- Canonical Data Graph Bar -->
+    <g transform="translate(24, 212)">
+      <rect width="1376" height="88" rx="12" fill="#ecfdf5" stroke="#10b981" stroke-width="1.8"/>
+      <rect x="16" y="14" width="186" height="26" rx="13" fill="#059669"/>
+      <text x="109" y="31" class="pill-text" fill="#ffffff" text-anchor="middle">Canonical Data Graph (SSOT)</text>
+      <text x="216" y="32" class="card-title" fill="#064e3b">실시간 시세(3m) × 확정 재무(24h) 동적 조인 &amp; 2nd-Pass 위험 역주입 (≤ 2ms)</text>
+      <text x="16" y="64" class="body-text" fill="#065f46">• 주가 변동에 따른 PER·PBR·배당수익률 실시간 재계산으로 <tspan class="body-bold">위젯↔본문 수치 100% 일치</tspan> 보장   • 지주사/자회사 구분 노트 및 레버리지·CB·적자(<tspan class="mono">NEGATIVE_EARNINGS</tspan>) 위험 자동 연결   • 검증 완료 <tspan class="mono">StructRAG</tspan> 패킷 출력</text>
+    </g>
+  </g>
+
+  <!-- Arrow Tier 2 -> Tier 3 -->
+  <line x1="740" y1="682" x2="740" y2="714" stroke="#059669" stroke-width="2.5" marker-end="url(#arrowEmerald)"/>
+  <rect x="570" y="687" width="340" height="20" rx="10" fill="#ecfdf5" stroke="#a7f3d0"/>
+  <text x="740" y="701" class="arrow-label" text-anchor="middle" fill="#065f46">무결성 검증된 StructRAG 팩트 패킷만 단일 메인 두뇌로 공급</text>
+
+  <!-- ==================== TIER 3: MAIN BRAIN, 7-C GUARD & MULTIMODAL (y: 718..964) ==================== -->
+  <g transform="translate(28, 718)">
+    <rect width="1424" height="246" rx="14" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#shadow)"/>
+    <rect x="0" y="0" width="6" height="246" rx="3" fill="#7c3aed"/>
+    <text x="24" y="30" class="sec-title" fill="#5b21b6">TIER 3 · 단일 메인 두뇌 (maryBrain) · 7-C 출구 가드레일 · 멀티모달 보조 엔진</text>
+
+    <!-- Main Brain Box -->
+    <g transform="translate(24, 48)">
+      <rect width="580" height="176" rx="12" fill="url(#brainGrad)" filter="url(#shadowStrong)"/>
+      <rect x="16" y="14" width="134" height="24" rx="12" fill="#3b82f6"/>
+      <text x="83" y="30" class="pill-text" fill="#ffffff" text-anchor="middle">단일 메인 두뇌 (LLM)</text>
+      <text x="162" y="31" class="card-title" fill="#ffffff">maryBrain.ts (gemini-4-hydrogen)</text>
+      <text x="16" y="60" class="body-text" fill="#e2e8f0">• 과거 8번 Synthesizer 직렬 병목(8.5~12s) 제거 ➔ <tspan class="body-bold" fill="#93c5fd">턴당 단 1회 SSE 스트리밍</tspan></text>
+      <text x="16" y="82" class="body-text" fill="#e2e8f0">• <tspan class="mono" fill="#a7f3d0">StructRAG</tspan> 팩트 + 개인 컨텍스트(관심종목·기억·메모·따봉 선호 스타일) 통합</text>
+      <text x="16" y="104" class="body-text" fill="#e2e8f0">• 위젯 선노출(평균 5.35s) + 본문 스트리밍 + 핵심 4줄 요약(<tspan class="mono" fill="#fde68a">[[MARY_SUMMARY]]</tspan>) 분리</text>
+      <text x="16" y="126" class="body-text" fill="#e2e8f0">• 세후 배당(15.4%)·물타기·손익복구 결정론 수학 엔진 결과 앵커링</text>
+      <text x="16" y="154" class="body-bold" fill="#34d399">✅ 팩트 환각(Hallucination) 원천 봉쇄 · 응답 지연 및 추론 비용 최소화</text>
+    </g>
+
+    <!-- 7-C Exit Guard -->
+    <g transform="translate(620, 48)">
+      <rect width="370" height="176" rx="12" fill="#fff1f2" stroke="#fda4af" stroke-width="1.2"/>
+      <rect x="14" y="14" width="100" height="22" rx="11" fill="#e11d48"/>
+      <text x="64" y="29" class="pill-text" fill="#ffffff" text-anchor="middle">7-C 출구 가드</text>
+      <text x="124" y="30" class="card-title" fill="#881337">컴플라이언스 &amp; 품질 정화</text>
+      <text x="14" y="58" class="body-text">• <tspan class="mono">sanitizeNeutralStrategyText</tspan>: 권유·매수추천어 정화</text>
+      <text x="14" y="80" class="body-text">• 법정 투자 판단 면책 고지 100% 자동 부착</text>
+      <text x="14" y="102" class="body-text">• 출력 PII 재마스킹 (<tspan class="mono">content_masked</tspan>만 저장)</text>
+      <text x="14" y="124" class="body-text">• <tspan class="mono">__model:*</tspan> 사용 모델 표기 자동 부착</text>
+      <text x="14" y="146" class="body-text">• 비분석·사과·질의응답 시 4줄 요약 버블 자동 억제</text>
+    </g>
+
+    <!-- Multimodal & Aux -->
+    <g transform="translate(1006, 48)">
+      <rect width="394" height="176" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2"/>
+      <rect x="14" y="14" width="110" height="22" rx="11" fill="#0f766e"/>
+      <text x="69" y="29" class="pill-text" fill="#ffffff" text-anchor="middle">멀티모달 · 보조</text>
+      <text x="134" y="30" class="card-title" fill="#0f172a">비전 OCR · 음성 · 알림 엔진</text>
+      <text x="14" y="58" class="body-text">• <tspan class="body-bold">비전 OCR</tspan> (<tspan class="mono">gemini-4-hydrogen</tspan>): 증권앱 캡처 잔고</text>
+      <text x="24" y="76" class="body-text">추출 + <tspan class="mono">reconcileVisionHoldingRow</tspan>·자가치유</text>
+      <text x="14" y="98" class="body-text">• <tspan class="body-bold">음성 STT/TTS</tspan> (<tspan class="mono">gemini-3.8-flash</tspan>): 일 1,000원 캡</text>
+      <text x="14" y="120" class="body-text">• <tspan class="body-bold">개인화 알림함</tspan>: <tspan class="mono">dedupe_key</tspan> 중복제거(60건/90일)</text>
+      <text x="14" y="142" class="body-text">• <tspan class="body-bold">랜딩 모델</tspan>: 진행중·미확인·추천 3종 즉시 산출</text>
+    </g>
+  </g>
+
+  <!-- Arrow Tier 3 -> Tier 4 -->
+  <line x1="480" y1="964" x2="480" y2="996" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrowSlate)"/>
+  <line x1="1150" y1="964" x2="1150" y2="996" stroke="#7c3aed" stroke-width="2.5" marker-end="url(#arrowPurple)"/>
+  <rect x="295" y="969" width="370" height="20" rx="10" fill="#f1f5f9" stroke="#cbd5e1"/>
+  <text x="480" y="983" class="arrow-label" text-anchor="middle">슬롯 분리 저장 &amp; 마스킹 완료 데이터만 DB 영속화</text>
+  <rect x="975" y="969" width="350" height="20" rx="10" fill="#f5f3ff" stroke="#ddd6fe"/>
+  <text x="1150" y="983" class="arrow-label" text-anchor="middle" fill="#6d28d9">Next.js after() 0ms 비동기 루브릭·Langfuse·워밍</text>
+
+  <!-- ==================== TIER 4: MULTI-TTL CACHE, ISOLATED DB & ASYNC QA (y: 1000..1460) ==================== -->
+  <g transform="translate(28, 1000)">
+    <rect width="1424" height="460" rx="14" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#shadow)"/>
+    <rect x="0" y="0" width="6" height="460" rx="3" fill="#0284c7"/>
+    <text x="24" y="30" class="sec-title" fill="#0369a1">TIER 4 · 슬롯 분리 멀티-TTL 캐시 · 물리 격리 DB (public vs pii_vault) · 0ms 비동기 품질 평가 &amp; 트레이싱</text>
+
+    <!-- Column 1: Multi-TTL Cache Hierarchy -->
+    <g transform="translate(24, 48)">
+      <rect width="454" height="390" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2"/>
+      <rect x="14" y="14" width="130" height="22" rx="11" fill="#0284c7"/>
+      <text x="79" y="29" class="pill-text" fill="#ffffff" text-anchor="middle">슬롯 분리 멀티-TTL</text>
+      <text x="154" y="30" class="card-title" fill="#0f172a">인메모리 &amp; DB 캐시 계층</text>
+
+      <text x="14" y="60" class="body-bold" fill="#0369a1">1) 초고속 인메모리 캐시 (0~1ms)</text>
+      <text x="14" y="80" class="body-text">• <tspan class="mono">institutionalKB</tspan> (16대 RAG): <tspan class="body-bold">상시 내장 (만료 없음)</tspan></text>
+      <text x="14" y="100" class="body-text">• <tspan class="mono">discoverMarketService</tspan>: <tspan class="body-bold">20초</tspan> (UI 폴링 30s)</text>
+      <text x="14" y="120" class="body-text">• <tspan class="mono">marketOverviewMemCache</tspan>: <tspan class="body-bold">90초</tspan></text>
+      <text x="14" y="140" class="body-text">• 뉴스 헤드라인(<tspan class="body-bold">30분</tspan>) · 수시 공시(<tspan class="body-bold">1시간</tspan>)</text>
+
+      <line x1="14" y1="158" x2="440" y2="158" stroke="#e2e8f0" stroke-width="1"/>
+      <text x="14" y="180" class="body-bold" fill="#0369a1">2) mary_stock_cache 슬롯 독립 보존 (7일 TTL)</text>
+      <text x="14" y="200" class="body-text">• 시세·캔들 슬롯: <tspan class="body-bold">장중 3분 / 장마감·주말 5시간</tspan></text>
+      <text x="14" y="220" class="body-text">• <tspan class="mono">DART_SLOT_V2</tspan> (재무): <tspan class="body-bold">24시간</tspan> (<tspan class="mono">Last-Known-Good</tspan>)</text>
+      <text x="14" y="240" class="body-text">• <tspan class="mono">disclosures_slot</tspan>: <tspan class="body-bold">6시간</tspan> · <tspan class="mono">news_summary</tspan>: <tspan class="body-bold">60분</tspan></text>
+      <text x="14" y="260" class="body-text">• <tspan class="mono">__FEED_CACHE__</tspan>: <tspan class="body-bold">30분</tspan> · <tspan class="mono">KNOWLEDGE_V1</tspan>: <tspan class="body-bold">24시간</tspan></text>
+
+      <line x1="14" y1="278" x2="440" y2="278" stroke="#e2e8f0" stroke-width="1"/>
+      <text x="14" y="300" class="body-bold" fill="#0369a1">3) 공용 피드 &amp; 정적 자산</text>
+      <text x="14" y="320" class="body-text">• <tspan class="mono">mary_shared_feed_news</tspan> (뉴스 3:SNS 1): <tspan class="body-bold">7일 TTL</tspan></text>
+      <text x="14" y="340" class="body-text">• <tspan class="mono">mary_feed_stock_pool</tspan> (400종목) · <tspan class="mono">company_symbols</tspan> (1,408)</text>
+      <text x="14" y="360" class="body-text">• Top-200 WebP 로고 (<tspan class="mono">/stock-logos/</tspan>): <tspan class="body-bold">1년 불변</tspan></text>
+    </g>
+
+    <!-- Column 2: Isolated DB (public vs pii_vault) -->
+    <g transform="translate(494, 48)">
+      <rect width="466" height="390" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2"/>
+      <rect x="14" y="14" width="134" height="22" rx="11" fill="#0f766e"/>
+      <text x="81" y="29" class="pill-text" fill="#ffffff" text-anchor="middle">물리 격리 · FORCE RLS</text>
+      <text x="158" y="30" class="card-title" fill="#0f172a">Supabase DB (public vs pii_vault)</text>
+
+      <rect x="14" y="48" width="438" height="164" rx="8" fill="#ffffff" stroke="#99f6e4" stroke-width="1.2"/>
+      <text x="26" y="70" class="body-bold" fill="#0f766e">📂 public 스키마 (Zero-PII · FORCE RLS · 25개 테이블)</text>
+      <text x="26" y="92" class="body-text">• <tspan class="body-bold">14일</tspan>: <tspan class="mono">mary_feed_items</tspan> (맞춤 피드 카드)</text>
+      <text x="26" y="112" class="body-text">• <tspan class="body-bold">90일</tspan>: <tspan class="mono">mary_threads</tspan> · <tspan class="mono">mary_messages</tspan> · <tspan class="mono">notifications</tspan> · <tspan class="mono">order_audit</tspan></text>
+      <text x="26" y="132" class="body-text">• <tspan class="body-bold">180일</tspan>: <tspan class="mono">devices</tspan> · <tspan class="mono">strategies</tspan> · <tspan class="mono">notes</tspan> · <tspan class="mono">portfolios</tspan> · <tspan class="mono">feedback</tspan></text>
+      <text x="26" y="152" class="body-text">• <tspan class="body-bold">180일</tspan>: <tspan class="mono">mary_rubric_evaluations</tspan> (16타깃 평가 원장)</text>
+      <text x="26" y="172" class="body-text">• 모든 텍스트 <tspan class="mono">content_masked</tspan> + 가명 UUID만 저장</text>
+      <text x="26" y="192" class="body-text">• 매일 <tspan class="body-bold">03:00 KST</tspan> Vercel Cron(<tspan class="mono">run_privacy_lifecycle_job</tspan>) 파기</text>
+
+      <rect x="14" y="226" width="438" height="148" rx="8" fill="#fef2f2" stroke="#fecaca" stroke-width="1.2"/>
+      <text x="26" y="248" class="body-bold" fill="#b91c1c">🔐 pii_vault 스키마 (PostgREST 비노출 · AES-256-GCM)</text>
+      <text x="26" y="270" class="body-text">• <tspan class="mono">REVOKE ALL</tspan> from PUBLIC/anon/authenticated (서버 전용)</text>
+      <text x="26" y="290" class="body-text">• <tspan class="mono">mary_broker_secrets</tspan>: 증권사 API 키·계좌번호 암호화 저장</text>
+      <text x="26" y="310" class="body-text">• <tspan class="mono">user_identities</tspan> · <tspan class="mono">oauth_credentials</tspan> · <tspan class="mono">dormant_identities</tspan></text>
+      <text x="26" y="330" class="body-text">• <tspan class="mono">privacy_audit_logs</tspan> (동의·파기·휴면 감사, <tspan class="body-bold">1년 TTL</tspan>)</text>
+      <text x="26" y="352" class="body-bold" fill="#991b1b">✅ 금융 코어(외부망)와 물리 DB 100% 독립 분리</text>
+    </g>
+
+    <!-- Column 3: Async Rubric Evaluation, Langfuse & Telemetry -->
+    <g transform="translate(976, 48)">
+      <rect width="424" height="390" rx="12" fill="#faf5ff" stroke="#d8b4fe" stroke-width="1.2"/>
+      <rect x="14" y="14" width="126" height="22" rx="11" fill="#7c3aed"/>
+      <text x="77" y="29" class="pill-text" fill="#ffffff" text-anchor="middle">after() 0ms 비동기</text>
+      <text x="150" y="30" class="card-title" fill="#4c1d95">루브릭 평가 · 관측 · 로깅</text>
+
+      <text x="14" y="60" class="body-bold" fill="#6d28d9">1) 16타깃 2-Tier 하이브리드 루브릭 평가</text>
+      <text x="14" y="80" class="body-text">• <tspan class="mono">rubricCatalog.ts</tspan>: 채팅 7종 + 비채팅 9종 (0~4점 앵커)</text>
+      <text x="14" y="100" class="body-text">• <tspan class="body-bold">Tier-1 결정론</tspan> (0ms) + <tspan class="body-bold">Hard-Veto</tspan> 게이트(PII·면책·권유)</text>
+      <text x="14" y="120" class="body-text">• <tspan class="body-bold">Tier-2 Judge</tspan> (<tspan class="mono">gemini-3.8-flash</tspan>): 정상 10% /</text>
+      <text x="24" y="138" class="body-text">이상징후·가드레일·<tspan class="mono">dislike</tspan> 100% 스마트 샘플링</text>
+
+      <line x1="14" y1="156" x2="410" y2="156" stroke="#e9d5ff" stroke-width="1"/>
+      <text x="14" y="178" class="body-bold" fill="#6d28d9">2) Langfuse &amp; Amplitude (Zero-PII)</text>
+      <text x="14" y="198" class="body-text">• <tspan class="body-bold">Langfuse SDK</tspan>: 턴/스팬 트레이스 + 루브릭 <tspan class="mono">score()</tspan></text>
+      <text x="14" y="218" class="body-text">• HMAC 단방향 Actor 해시 + <tspan class="mono">sanitizeForLangfuse()</tspan></text>
+      <text x="14" y="238" class="body-text">• <tspan class="body-bold">Amplitude HTTP V2</tspan>: 31화면 · 136메뉴 · 46종 금지키 제거</text>
+
+      <line x1="14" y1="256" x2="410" y2="256" stroke="#e9d5ff" stroke-width="1"/>
+      <text x="14" y="278" class="body-bold" fill="#6d28d9">3) 백그라운드 캐시 워밍 &amp; 정산</text>
+      <text x="14" y="298" class="body-text">• 음성 <tspan class="mono">reconcileVoiceBudget()</tspan> 실토큰 차액 정산</text>
+      <text x="14" y="318" class="body-text">• <tspan class="mono">prewarmTopDiscoverQuotes()</tspan> 50종목 선제 워밍</text>
+      <text x="14" y="338" class="body-text">• 오너 전용 <tspan class="mono">/artifect</tspan> &amp; Product Hub 일일 자동 동기화</text>
+      <text x="14" y="362" class="body-bold" fill="#5b21b6">⚡ 사용자 체감 응답 지연 추가 = 0ms</text>
+    </g>
+  </g>
+
+  <!-- Footer -->
+  <g transform="translate(28, 1488)">
+    <text x="0" y="0" style="font-family: -apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif; font-size: 11px; fill: #64748b; font-weight: 500;">
+      MARY Financial AI Agent · Unified Backend, Multi-Agent &amp; Multi-TTL Data Architecture (SSOT)
+    </text>
+    <text x="1424" y="0" text-anchor="end" style="font-family: -apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif; font-size: 11px; fill: #94a3b8; font-weight: 500;">
+      Unified Specification · 2026-11-23
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1380" width="1440" height="1380">
+  <defs>
+    <style>
+      .font { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", "Segoe UI", Roboto, sans-serif; }
+      .title { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", "Segoe UI", Roboto, sans-serif; font-weight: 800; font-size: 26px; fill: #ffffff; letter-spacing: -0.5px; }
+      .subtitle { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", "Segoe UI", Roboto, sans-serif; font-weight: 500; font-size: 13.5px; fill: #94a3b8; }
+      .badge-text { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", "Segoe UI", Roboto, sans-serif; font-weight: 700; font-size: 11.5px; fill: #ffffff; }
+      .sec-title { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", "Segoe UI", Roboto, sans-serif; font-weight: 800; font-size: 16px; letter-spacing: -0.3px; }
+      .card-title { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", "Segoe UI", Roboto, sans-serif; font-weight: 700; font-size: 15px; letter-spacing: -0.2px; }
+      .card-sub { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", "Segoe UI", Roboto, sans-serif; font-weight: 600; font-size: 12px; fill: #475569; }
+      .body-bold { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", "Segoe UI", Roboto, sans-serif; font-weight: 700; font-size: 13px; fill: #0f172a; }
+      .body-text { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", "Segoe UI", Roboto, sans-serif; font-weight: 400; font-size: 12.5px; fill: #334155; }
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-weight: 600; font-size: 11.5px; }
+      .pill-text { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", "Segoe UI", Roboto, sans-serif; font-weight: 700; font-size: 11px; }
+      .arrow-label { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", "Segoe UI", Roboto, sans-serif; font-weight: 700; font-size: 11.5px; fill: #334155; }
+      .step-num { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", "Segoe UI", Roboto, sans-serif; font-weight: 800; font-size: 11px; fill: #ffffff; }
+    </style>
+
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+
+    <linearGradient id="headerGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="55%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <linearGradient id="brainGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e3a5f"/>
+    </linearGradient>
+
+    <filter id="shadow" x="-3%" y="-3%" width="106%" height="108%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.06"/>
+    </filter>
+
+    <filter id="shadowStrong" x="-4%" y="-4%" width="108%" height="110%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.12"/>
+    </filter>
+
+    <marker id="arrowSlate" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8.5 5 L 0 8.5 z" fill="#64748b"/>
+    </marker>
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8.5 5 L 0 8.5 z" fill="#2563eb"/>
+    </marker>
+    <marker id="arrowTeal" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8.5 5 L 0 8.5 z" fill="#0d9488"/>
+    </marker>
+    <marker id="arrowPurple" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8.5 5 L 0 8.5 z" fill="#7c3aed"/>
+    </marker>
+    <marker id="arrowAmber" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8.5 5 L 0 8.5 z" fill="#d97706"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1440" height="1380" fill="url(#bgGrad)"/>
+
+  <!-- Header Banner -->
+  <g transform="translate(32, 24)">
+    <rect width="1376" height="92" rx="16" fill="url(#headerGrad)" filter="url(#shadowStrong)"/>
+    <text x="32" y="42" class="title">MARY AI 에이전트 &amp; 결정론적 데이터 그래프 아키텍처</text>
+    <text x="32" y="68" class="subtitle">단일 메인 두뇌(maryBrain.ts · gemini-4-hydrogen) + 비-LLM 결정론 수집/검증 계층 · 8.5~12초 직렬 병목 제거</text>
+
+    <!-- Header Badges -->
+    <g transform="translate(920, 28)">
+      <rect x="0" y="0" width="136" height="34" rx="17" fill="#0f766e"/>
+      <text x="68" y="21" class="badge-text" text-anchor="middle">하위 계층 LLM 0회</text>
+
+      <rect x="148" y="0" width="134" height="34" rx="17" fill="#2563eb"/>
+      <text x="215" y="21" class="badge-text" text-anchor="middle">4-Way 병렬 Fan-out</text>
+
+      <rect x="294" y="0" width="134" height="34" rx="17" fill="#7c3aed"/>
+      <text x="361" y="21" class="badge-text" text-anchor="middle">턴당 추론 단 1회</text>
+    </g>
+  </g>
+
+  <!-- STEP 1: User Query & 2x PII Masking -->
+  <g transform="translate(460, 144)">
+    <rect width="520" height="66" rx="14" fill="#ffffff" stroke="#334155" stroke-width="2" filter="url(#shadow)"/>
+    <rect x="16" y="18" width="64" height="30" rx="8" fill="#0f172a"/>
+    <text x="48" y="37" class="step-num" text-anchor="middle">INPUT</text>
+    <text x="98" y="31" class="card-title" fill="#0f172a">사용자 질의 (2중 PII 마스킹)</text>
+    <text x="98" y="50" class="card-sub">계좌번호 · 개인식별정보 · 증권사 키 등 민감정보 사전 마스킹 처리</text>
+  </g>
+
+  <!-- Arrow 1 -> 2 -->
+  <line x1="720" y1="210" x2="720" y2="252" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrowSlate)"/>
+  <rect x="734" y="219" width="70" height="22" rx="11" fill="#e2e8f0"/>
+  <text x="769" y="234" class="arrow-label" text-anchor="middle">≤ 1ms</text>
+
+  <!-- STEP 2: [0번] Supervisor Planner + [7-A] Entry Guardrail -->
+  <g transform="translate(80, 256)">
+    <rect width="1280" height="112" rx="16" fill="#eff6ff" stroke="#3b82f6" stroke-width="2" filter="url(#shadow)"/>
+    <!-- Top bar inside card -->
+    <rect x="20" y="16" width="56" height="24" rx="6" fill="#1d4ed8"/>
+    <text x="48" y="32" class="step-num" text-anchor="middle">0번</text>
+    <text x="88" y="33" class="sec-title" fill="#1e3a8a">의도 라우터 &amp; 약어 방어 + [7-A] 입구 가드레일</text>
+
+    <rect x="1116" y="14" width="144" height="26" rx="13" fill="#dbeafe" stroke="#93c5fd" stroke-width="1"/>
+    <text x="1188" y="31" class="pill-text" fill="#1e40af" text-anchor="middle">LLM 미사용 · ≤ 1ms · 0원</text>
+
+    <!-- Left box: 0번 -->
+    <rect x="20" y="50" width="760" height="48" rx="10" fill="#ffffff" stroke="#bfdbfe" stroke-width="1.2"/>
+    <text x="36" y="70" class="body-bold" fill="#1e3a8a">supervisorPlanner.ts + tickerGuard.ts</text>
+    <text x="36" y="88" class="body-text">다중 의도(Multi-Intent) 동시 활성화 · 6종 표준 출력 포맷 배정 · RSI·CB·BW·MSCI·FCF·CMA·GAUZ 해외티커 오인 차단</text>
+
+    <!-- Right box: 7-A -->
+    <rect x="796" y="50" width="464" height="48" rx="10" fill="#fff1f2" stroke="#fecdd3" stroke-width="1.2"/>
+    <text x="812" y="70" class="body-bold" fill="#9f1239">[7-A] 입구 가드레일 (사전 방어)</text>
+    <text x="812" y="88" class="body-text" fill="#881337">1:1 매매지시 · 고위험 사전 탐지 (5·6번 실계좌/자동주문 비활성)</text>
+  </g>
+
+  <!-- Fan-out Arrows (0번 -> 1, 2, 3, 4번) -->
+  <g>
+    <line x1="720" y1="368" x2="720" y2="392" stroke="#2563eb" stroke-width="2.5"/>
+    <line x1="230" y1="392" x2="1210" y2="392" stroke="#2563eb" stroke-width="2.5"/>
+    <line x1="230" y1="392" x2="230" y2="424" stroke="#2563eb" stroke-width="2.5" marker-end="url(#arrowBlue)"/>
+    <line x1="556" y1="392" x2="556" y2="424" stroke="#2563eb" stroke-width="2.5" marker-end="url(#arrowBlue)"/>
+    <line x1="884" y1="392" x2="884" y2="424" stroke="#2563eb" stroke-width="2.5" marker-end="url(#arrowBlue)"/>
+    <line x1="1210" y1="392" x2="1210" y2="424" stroke="#2563eb" stroke-width="2.5" marker-end="url(#arrowBlue)"/>
+
+    <rect x="650" y="380" width="140" height="24" rx="12" fill="#2563eb"/>
+    <text x="720" y="396" class="badge-text" text-anchor="middle">병렬 Fan-out (동시 수집)</text>
+  </g>
+
+  <!-- STEP 3: 4 Parallel Deterministic Collectors -->
+  <!-- Card 1: [1번] 시세·차트 -->
+  <g transform="translate(80, 428)">
+    <rect width="300" height="174" rx="14" fill="#ffffff" stroke="#0d9488" stroke-width="2" filter="url(#shadow)"/>
+    <rect x="0" y="0" width="300" height="40" rx="14" fill="#f0fdfa"/>
+    <rect x="0" y="24" width="300" height="16" fill="#f0fdfa"/>
+    <line x1="0" y1="40" x2="300" y2="40" stroke="#99f6e4" stroke-width="1"/>
+    <rect x="14" y="8" width="44" height="24" rx="6" fill="#0d9488"/>
+    <text x="36" y="24" class="step-num" text-anchor="middle">1번</text>
+    <text x="68" y="25" class="card-title" fill="#134e4a">시세 · 차트 수집기</text>
+
+    <text x="16" y="62" class="mono" fill="#0f766e">liveMarketData · indicators</text>
+    <text x="16" y="84" class="body-text">• KRX / 미국 시세 (Yahoo 폴백)</text>
+    <text x="16" y="103" class="body-text">• 5일 수급 · 일/주/월/분봉 캔들</text>
+    <text x="16" y="122" class="body-text">• Wilder RSI(14)·MACD·볼린저 실측</text>
+
+    <rect x="16" y="138" width="142" height="24" rx="12" fill="#ccfbf1"/>
+    <text x="87" y="154" class="pill-text" fill="#115e59" text-anchor="middle">3m / 5h 캐시 · ~180ms</text>
+    <rect x="166" y="138" width="118" height="24" rx="12" fill="#f1f5f9"/>
+    <text x="225" y="154" class="pill-text" fill="#475569" text-anchor="middle">LLM 미사용</text>
+  </g>
+
+  <!-- Card 2: [2번] OpenDART -->
+  <g transform="translate(406, 428)">
+    <rect width="300" height="174" rx="14" fill="#ffffff" stroke="#0d9488" stroke-width="2" filter="url(#shadow)"/>
+    <rect x="0" y="0" width="300" height="40" rx="14" fill="#f0fdfa"/>
+    <rect x="0" y="24" width="300" height="16" fill="#f0fdfa"/>
+    <line x1="0" y1="40" x2="300" y2="40" stroke="#99f6e4" stroke-width="1"/>
+    <rect x="14" y="8" width="44" height="24" rx="6" fill="#0d9488"/>
+    <text x="36" y="24" class="step-num" text-anchor="middle">2번</text>
+    <text x="68" y="25" class="card-title" fill="#134e4a">OpenDART · 재무</text>
+
+    <text x="16" y="62" class="mono" fill="#0f766e">liveMarketData · financeCoreBridge</text>
+    <text x="16" y="84" class="body-text">• 금감원 확정 분기/연간 매출·영업이익</text>
+    <text x="16" y="103" class="body-text">• 원천 EPS · BPS · DPS 수집</text>
+    <text x="16" y="122" class="body-text">• 증권사 컨센서스 · 최근 전자공시</text>
+
+    <rect x="16" y="138" width="142" height="24" rx="12" fill="#ccfbf1"/>
+    <text x="87" y="154" class="pill-text" fill="#115e59" text-anchor="middle">24h / 1h 원천 슬롯</text>
+    <rect x="166" y="138" width="118" height="24" rx="12" fill="#f1f5f9"/>
+    <text x="225" y="154" class="pill-text" fill="#475569" text-anchor="middle">LLM 미사용</text>
+  </g>
+
+  <!-- Card 3: [3번] 뉴스·감성 -->
+  <g transform="translate(734, 428)">
+    <rect width="300" height="174" rx="14" fill="#ffffff" stroke="#0d9488" stroke-width="2" filter="url(#shadow)"/>
+    <rect x="0" y="0" width="300" height="40" rx="14" fill="#f0fdfa"/>
+    <rect x="0" y="24" width="300" height="16" fill="#f0fdfa"/>
+    <line x1="0" y1="40" x2="300" y2="40" stroke="#99f6e4" stroke-width="1"/>
+    <rect x="14" y="8" width="44" height="24" rx="6" fill="#0d9488"/>
+    <text x="36" y="24" class="step-num" text-anchor="middle">3번</text>
+    <text x="68" y="25" class="card-title" fill="#134e4a">뉴스 · 모멘텀 감성</text>
+
+    <text x="16" y="62" class="mono" fill="#0f766e">newsSentimentSubagent.ts</text>
+    <text x="16" y="84" class="body-text">• 주요 경제지 실시간 보도 (최대 4건)</text>
+    <text x="16" y="103" class="body-text">• 원문 출처 URL 배지 제공</text>
+    <text x="16" y="122" class="body-text">• 긍정 / 중립 / 경계 모멘텀 분류</text>
+
+    <rect x="16" y="138" width="142" height="24" rx="12" fill="#ccfbf1"/>
+    <text x="87" y="154" class="pill-text" fill="#115e59" text-anchor="middle">30m / 60m 캐시 TTL</text>
+    <rect x="166" y="138" width="118" height="24" rx="12" fill="#f1f5f9"/>
+    <text x="225" y="154" class="pill-text" fill="#475569" text-anchor="middle">LLM 미사용</text>
+  </g>
+
+  <!-- Card 4: [4번] 정통 RAG -->
+  <g transform="translate(1060, 428)">
+    <rect width="300" height="174" rx="14" fill="#ffffff" stroke="#0d9488" stroke-width="2" filter="url(#shadow)"/>
+    <rect x="0" y="0" width="300" height="40" rx="14" fill="#f0fdfa"/>
+    <rect x="0" y="24" width="300" height="16" fill="#f0fdfa"/>
+    <line x1="0" y1="40" x2="300" y2="40" stroke="#99f6e4" stroke-width="1"/>
+    <rect x="14" y="8" width="44" height="24" rx="6" fill="#0d9488"/>
+    <text x="36" y="24" class="step-num" text-anchor="middle">4번</text>
+    <text x="68" y="25" class="card-title" fill="#134e4a">정통 금융·세법 RAG</text>
+
+    <text x="16" y="62" class="mono" fill="#0f766e">institutionalKnowledgeBase</text>
+    <text x="16" y="84" class="body-text">• 16대 금융·세법 도메인 ~300선 코퍼스</text>
+    <text x="16" y="103" class="body-text">• 인프로세스 메모리 초고속 검색</text>
+    <text x="16" y="122" class="body-text">• Tier-1 법령 우선 → 최신 시행일 중재</text>
+
+    <rect x="16" y="138" width="142" height="24" rx="12" fill="#ccfbf1"/>
+    <text x="87" y="154" class="pill-text" fill="#115e59" text-anchor="middle">≤ 2ms · 0원</text>
+    <rect x="166" y="138" width="118" height="24" rx="12" fill="#f1f5f9"/>
+    <text x="225" y="154" class="pill-text" fill="#475569" text-anchor="middle">LLM 미사용</text>
+  </g>
+
+  <!-- Merge Arrows (1~4번 -> 7-B + Canonical Data Graph) -->
+  <g>
+    <line x1="230" y1="602" x2="230" y2="626" stroke="#0d9488" stroke-width="2.5"/>
+    <line x1="556" y1="602" x2="556" y2="626" stroke="#0d9488" stroke-width="2.5"/>
+    <line x1="884" y1="602" x2="884" y2="626" stroke="#0d9488" stroke-width="2.5"/>
+    <line x1="1210" y1="602" x2="1210" y2="626" stroke="#0d9488" stroke-width="2.5"/>
+    <line x1="230" y1="626" x2="1210" y2="626" stroke="#0d9488" stroke-width="2.5"/>
+    <line x1="720" y1="626" x2="720" y2="656" stroke="#7c3aed" stroke-width="2.5" marker-end="url(#arrowPurple)"/>
+
+    <rect x="734" y="630" width="132" height="22" rx="11" fill="#ede9fe"/>
+    <text x="800" y="645" class="arrow-label" fill="#5b21b6" text-anchor="middle">≤ 2ms · 정형 병합</text>
+  </g>
+
+  <!-- STEP 4: [7-B 인바운드 방역] -> [Canonical Data Graph] -->
+  <g transform="translate(80, 660)">
+    <rect width="1280" height="176" rx="16" fill="#f5f3ff" stroke="#7c3aed" stroke-width="2" filter="url(#shadow)"/>
+    <rect x="20" y="16" width="64" height="24" rx="6" fill="#6d28d9"/>
+    <text x="52" y="32" class="step-num" text-anchor="middle">GRAPH</text>
+    <text x="96" y="33" class="sec-title" fill="#4c1d95">[7-B 인바운드 방역]  ➔  [Canonical Data Graph] (단일 진실 원천 · SSOT)</text>
+
+    <rect x="1116" y="14" width="144" height="26" rx="13" fill="#ede9fe" stroke="#c4b5fd" stroke-width="1"/>
+    <text x="1188" y="31" class="pill-text" fill="#5b21b6" text-anchor="middle">LLM 미사용 · ≤ 2ms · 0원</text>
+
+    <!-- 2x2 Grid of Graph Operations -->
+    <!-- Top Left -->
+    <rect x="20" y="52" width="612" height="52" rx="10" fill="#ffffff" stroke="#ddd6fe" stroke-width="1.2"/>
+    <text x="36" y="73" class="body-bold" fill="#5b21b6">① 스팸 방역 &amp; 중복 기사 병합</text>
+    <text x="36" y="92" class="body-text">스탁론·리딩방 스팸 폐기 · 유사 보도 중복 병합 (Jaccard ≥ 0.65) · 컨센서스 Tier-2 분리</text>
+
+    <!-- Top Right -->
+    <rect x="648" y="52" width="612" height="52" rx="10" fill="#ffffff" stroke="#ddd6fe" stroke-width="1.2"/>
+    <text x="664" y="73" class="body-bold" fill="#5b21b6">② 실시간 밸류에이션 동적 조인</text>
+    <text x="664" y="92" class="body-text">3m 현재가 × 24h 원천 EPS/BPS/DPS ➔ 실시간 PER · PBR · 배당수익률 재계산 (위젯↔본문 100% 일치)</text>
+
+    <!-- Bottom Left -->
+    <rect x="20" y="112" width="612" height="52" rx="10" fill="#ffffff" stroke="#ddd6fe" stroke-width="1.2"/>
+    <text x="36" y="133" class="body-bold" fill="#5b21b6">③ 예외 종목 상태 태깅</text>
+    <text x="36" y="152" class="body-text">적자 기업(NEGATIVE_EARNINGS) · ETF(INSTRUMENT_NOT_APPLICABLE) · 법인/지주사 구분 노트 자동 부착</text>
+
+    <!-- Bottom Right -->
+    <rect x="648" y="112" width="612" height="52" rx="10" fill="#ffffff" stroke="#ddd6fe" stroke-width="1.2"/>
+    <text x="664" y="133" class="body-bold" fill="#5b21b6">④ 2nd-Pass RAG &amp; 위험고지 역주입</text>
+    <text x="664" y="152" class="body-text">레버리지 ETF(음의 복리) · CB/BW 리픽싱 · 유상증자 공시 감지 시 위험고지 패킷 강제 역주입</text>
+  </g>
+
+  <!-- Arrow Graph -> SSE Fast-Path -->
+  <line x1="720" y1="836" x2="720" y2="876" stroke="#d97706" stroke-width="2.5" marker-end="url(#arrowAmber)"/>
+  <rect x="734" y="844" width="144" height="22" rx="11" fill="#fef3c7"/>
+  <text x="806" y="859" class="arrow-label" fill="#92400e" text-anchor="middle">~0.5초 (Fast-Path)</text>
+
+  <!-- STEP 5: SSE meta Fast-Path Widget Exposure -->
+  <g transform="translate(180, 880)">
+    <rect width="1080" height="58" rx="14" fill="#fffbeb" stroke="#f59e0b" stroke-width="2" filter="url(#shadow)"/>
+    <rect x="18" y="14" width="90" height="30" rx="8" fill="#d97706"/>
+    <text x="63" y="33" class="step-num" text-anchor="middle">SSE META</text>
+    <text x="124" y="34" class="card-title" fill="#92400e">상단 10종 인터랙티브 위젯 선노출</text>
+    <text x="410" y="34" class="body-text" fill="#78350f">LLM 답변이 스트리밍되기 전 확정 주가·차트·재무·밸류에이션 위젯을 UI에 즉시 렌더링</text>
+  </g>
+
+  <!-- Arrow SSE -> Main Brain -->
+  <line x1="720" y1="938" x2="720" y2="978" stroke="#0f172a" stroke-width="2.5" marker-end="url(#arrowSlate)"/>
+  <rect x="734" y="946" width="194" height="22" rx="11" fill="#e2e8f0"/>
+  <text x="831" y="961" class="arrow-label" fill="#0f172a" text-anchor="middle">턴당 단 1회 추론 (StructRAG)</text>
+
+  <!-- STEP 6: [메인 두뇌] maryBrain.ts -->
+  <g transform="translate(80, 982)">
+    <rect width="1280" height="170" rx="16" fill="url(#brainGrad)" stroke="#38bdf8" stroke-width="2.5" filter="url(#shadowStrong)"/>
+    <rect x="20" y="18" width="84" height="26" rx="6" fill="#0284c7"/>
+    <text x="62" y="35" class="step-num" text-anchor="middle">MAIN BRAIN</text>
+    <text x="118" y="36" class="sec-title" fill="#ffffff">[메인 두뇌] maryBrain.ts</text>
+
+    <rect x="1028" y="16" width="232" height="28" rx="14" fill="#0ea5e9"/>
+    <text x="1144" y="34" class="badge-text" text-anchor="middle">gemini-4-hydrogen (단일 스트리밍)</text>
+
+    <!-- Left sub-card: StructRAG + Personal Context -->
+    <rect x="20" y="56" width="540" height="94" rx="12" fill="#ffffff" fill-opacity="0.96"/>
+    <text x="38" y="80" class="body-bold" fill="#0f172a">StructRAG 팩트 패킷 + 개인 컨텍스트 결합</text>
+    <text x="38" y="102" class="body-text">• Graph에서 검증된 정형 팩트 패킷만 입력받아 수치 변질 차단</text>
+    <text x="38" y="122" class="body-text">• 관심종목(20개) · 장기기억 · 투자메모 · 따봉 선호 스타일 반영</text>
+    <text x="38" y="140" class="body-text" fill="#0369a1">• 비전(OCR)·음성(STT/TTS)은 온디맨드 보조 엔진으로 분리</text>
+
+    <!-- Right sub-card: 3-Stage Adaptive Google Search Grounding -->
+    <rect x="576" y="56" width="684" height="94" rx="12" fill="#ffffff" fill-opacity="0.96"/>
+    <text x="594" y="80" class="body-bold" fill="#0f172a">3단계 적응형 Google Search Grounding (불필요한 웹 검색 지연·비용 제거)</text>
+
+    <!-- Type A -->
+    <rect x="594" y="92" width="206" height="46" rx="8" fill="#f0fdf4" stroke="#86efac" stroke-width="1"/>
+    <text x="606" y="111" class="body-bold" fill="#166534">Type A · OFF (~2초)</text>
+    <text x="606" y="128" class="pill-text" fill="#15803d">단순 시세 · 확정실적 · 정통RAG</text>
+
+    <!-- Type B -->
+    <rect x="812" y="92" width="212" height="46" rx="8" fill="#fffbeb" stroke="#fcd34d" stroke-width="1"/>
+    <text x="824" y="111" class="body-bold" fill="#92400e">Type B · 조건부 ON</text>
+    <text x="824" y="128" class="pill-text" fill="#b45309">등락 이유 · 캐시 미스 시 검색</text>
+
+    <!-- Type C -->
+    <rect x="1036" y="92" width="206" height="46" rx="8" fill="#fef2f2" stroke="#fca5a5" stroke-width="1"/>
+    <text x="1048" y="111" class="body-bold" fill="#991b1b">Type C · 즉시 ON</text>
+    <text x="1048" y="128" class="pill-text" fill="#b91c1c">오늘 속보 · 최신 법령 개정안</text>
+  </g>
+
+  <!-- Arrow Main Brain -> 7-C Exit Guardrail -->
+  <line x1="720" y1="1152" x2="720" y2="1192" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrowSlate)"/>
+
+  <!-- STEP 7: [7-C 출구 가드레일] -->
+  <g transform="translate(140, 1196)">
+    <rect width="1160" height="72" rx="14" fill="#fff1f2" stroke="#e11d48" stroke-width="2" filter="url(#shadow)"/>
+    <rect x="20" y="20" width="60" height="32" rx="8" fill="#e11d48"/>
+    <text x="50" y="40" class="step-num" text-anchor="middle">7-C</text>
+    <text x="96" y="34" class="card-title" fill="#881337">[7-C] 출구 가드레일 (최종 응답 정화 및 컴플라이언스 검증)</text>
+    <text x="96" y="55" class="body-text" fill="#9f1239">권유어 중립화  ·  법정 면책 문구 100% 부착  ·  PII 재마스킹  ·  __model:* 출처 표기  ·  비분석 질의 4줄 요약 자동 억제</text>
+  </g>
+
+  <!-- Footer Legend & Metadata -->
+  <g transform="translate(80, 1296)">
+    <line x1="0" y1="0" x2="1280" y2="0" stroke="#cbd5e1" stroke-width="1.2"/>
+
+    <!-- Legend items -->
+    <rect x="0" y="18" width="14" height="14" rx="4" fill="#0d9488"/>
+    <text x="22" y="30" class="body-text">비-LLM 결정론 수집/검증 계층 (0원 · ≤ 2ms)</text>
+
+    <rect x="305" y="18" width="14" height="14" rx="4" fill="#7c3aed"/>
+    <text x="327" y="30" class="body-text">Canonical Data Graph (위젯↔본문 100% 일치)</text>
+
+    <rect x="635" y="18" width="14" height="14" rx="4" fill="#f59e0b"/>
+    <text x="657" y="30" class="body-text">SSE Fast-Path (~0.5초 선노출)</text>
+
+    <rect x="885" y="18" width="14" height="14" rx="4" fill="#0284c7"/>
+    <text x="907" y="30" class="body-text">단일 메인 LLM (턴당 1회)</text>
+
+    <rect x="1095" y="18" width="14" height="14" rx="4" fill="#e11d48"/>
+    <text x="1117" y="30" class="body-text">입/출구 가드레일 (7-A/B/C)</text>
+
+    <text x="0" y="56" class="card-sub" fill="#64748b">MARY Private Financial Agent · Agent &amp; Canonical Data Graph Architecture (#04-agent) · Zero-PII Verified</text>
+    <text x="1280" y="56" class="card-sub" fill="#64748b" text-anchor="end">Vector SVG &amp; High-DPI PNG</text>
+  </g>
+</svg>

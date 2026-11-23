@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1040" width="1440" height="1040">
+  <defs>
+    <style>
+      .title { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", "Segoe UI", Roboto, sans-serif; font-weight: 800; font-size: 25px; fill: #ffffff; letter-spacing: -0.5px; }
+      .subtitle { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", "Segoe UI", Roboto, sans-serif; font-weight: 500; font-size: 13.5px; fill: #94a3b8; }
+      .badge-text { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", "Segoe UI", Roboto, sans-serif; font-weight: 700; font-size: 11.5px; fill: #ffffff; }
+      .sec-title { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", "Segoe UI", Roboto, sans-serif; font-weight: 800; font-size: 16px; letter-spacing: -0.3px; }
+      .card-title { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", "Segoe UI", Roboto, sans-serif; font-weight: 700; font-size: 14.5px; letter-spacing: -0.2px; }
+      .card-sub { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", "Segoe UI", Roboto, sans-serif; font-weight: 600; font-size: 12px; fill: #475569; }
+      .body-bold { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", "Segoe UI", Roboto, sans-serif; font-weight: 700; font-size: 12.8px; fill: #0f172a; }
+      .body-text { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", "Segoe UI", Roboto, sans-serif; font-weight: 400; font-size: 12px; fill: #334155; }
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-weight: 600; font-size: 11.5px; }
+      .pill-text { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", "Segoe UI", Roboto, sans-serif; font-weight: 700; font-size: 11px; }
+    </style>
+
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+
+    <linearGradient id="headerGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="55%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <filter id="shadow" x="-3%" y="-3%" width="106%" height="108%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.06"/>
+    </filter>
+    <filter id="shadowStrong" x="-4%" y="-4%" width="108%" height="110%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="1440" height="1040" fill="url(#bgGrad)"/>
+
+  <!-- Header -->
+  <g transform="translate(32, 24)">
+    <rect width="1376" height="92" rx="16" fill="url(#headerGrad)" filter="url(#shadowStrong)"/>
+    <text x="32" y="42" class="title">MARY 모노레포 모듈 구성 &amp; 시스템 아키텍처</text>
+    <text x="32" y="68" class="subtitle">Turborepo + TypeScript 5.8 · apps/ (Next.js 15 &amp; Expo) · packages/ (shared 도메인 코어 &amp; lara-qa) · Supabase · Product Hub</text>
+
+    <g transform="translate(970, 28)">
+      <rect x="0" y="0" width="122" height="34" rx="17" fill="#2563eb"/>
+      <text x="61" y="21" class="badge-text" text-anchor="middle">apps/ (2종)</text>
+      <rect x="134" y="0" width="126" height="34" rx="17" fill="#0d9488"/>
+      <text x="197" y="21" class="badge-text" text-anchor="middle">packages/ (2종)</text>
+      <rect x="272" y="0" width="110" height="34" rx="17" fill="#7c3aed"/>
+      <text x="327" y="21" class="badge-text" text-anchor="middle">인프라 · 허브</text>
+    </g>
+  </g>
+
+  <!-- LAYER 1: apps/ -->
+  <g transform="translate(48, 140)">
+    <rect width="1344" height="214" rx="16" fill="#eff6ff" stroke="#3b82f6" stroke-width="2" filter="url(#shadow)"/>
+    <rect x="20" y="14" width="74" height="26" rx="6" fill="#1d4ed8"/>
+    <text x="57" y="31" class="badge-text" text-anchor="middle">apps/</text>
+    <text x="108" y="32" class="sec-title" fill="#1e3a8a">애플리케이션 레이어 (Web · PWA · Serverless API · Mobile)</text>
+
+    <!-- apps/api -->
+    <rect x="20" y="52" width="880" height="144" rx="12" fill="#ffffff" stroke="#bfdbfe" stroke-width="1.5"/>
+    <text x="36" y="76" class="card-title" fill="#1e40af">apps/api — Next.js 15 웹 · PWA · Serverless API</text>
+    <rect x="736" y="59" width="148" height="22" rx="11" fill="#dbeafe"/>
+    <text x="810" y="74" class="pill-text" fill="#1e40af" text-anchor="middle">@privateagent/api</text>
+
+    <rect x="36" y="92" width="268" height="88" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="48" y="112" class="mono" fill="#1d4ed8">src/app/api/</text>
+    <text x="48" y="132" class="body-text">• mary/* (대화/세션/발견/피드/메모)</text>
+    <text x="48" y="150" class="body-text">• 전략/포트폴리오/음성/브로커/분석</text>
+    <text x="48" y="168" class="body-text">• chat/, privacy/, cron/, artifect/</text>
+
+    <rect x="318" y="92" width="268" height="88" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="330" y="112" class="mono" fill="#1d4ed8">src/components/</text>
+    <text x="330" y="132" class="body-text">• mary/* (Antd v6 메신저 에디션)</text>
+    <text x="330" y="150" class="body-text">• TradingView 차트 · 위젯 · 음성</text>
+    <text x="330" y="168" class="body-text">• 트레이딩 드로어 · artifect/*</text>
+
+    <rect x="600" y="92" width="284" height="88" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="612" y="112" class="mono" fill="#1d4ed8">src/lib/</text>
+    <text x="612" y="132" class="body-text">• maryBrain · orchestrator</text>
+    <text x="612" y="150" class="body-text">• liveMarketData · coreFinanceBridge</text>
+    <text x="612" y="168" class="body-text">• deviceAuth · cryptoVault · langfuse</text>
+
+    <!-- apps/mobile -->
+    <rect x="916" y="52" width="408" height="144" rx="12" fill="#ffffff" stroke="#bfdbfe" stroke-width="1.5"/>
+    <text x="932" y="76" class="card-title" fill="#1e40af">apps/mobile — 네이티브 확장 앱</text>
+    <rect x="1156" y="59" width="152" height="22" rx="11" fill="#dbeafe"/>
+    <text x="1232" y="74" class="pill-text" fill="#1e40af" text-anchor="middle">@privateagent/mobile</text>
+    <text x="932" y="106" class="body-text">• Expo ~52.0 + React Native 0.76</text>
+    <text x="932" y="128" class="body-text">• expo-secure-store (OS Keychain/Keystore)</text>
+    <text x="932" y="150" class="body-text">• Capacitor (capacitor.config.json) 병행</text>
+    <text x="932" y="172" class="body-text">• iOS / Android 비서 대화 및 보안 연동</text>
+  </g>
+
+  <!-- LAYER 2: packages/shared (Core Domain) -->
+  <g transform="translate(48, 374)">
+    <rect width="1344" height="340" rx="16" fill="#f0fdfa" stroke="#0d9488" stroke-width="2" filter="url(#shadow)"/>
+    <rect x="20" y="14" width="144" height="26" rx="6" fill="#0f766e"/>
+    <text x="92" y="31" class="badge-text" text-anchor="middle">packages/shared</text>
+    <text x="178" y="32" class="sec-title" fill="#134e4a">프론트 · 백엔드 공용 순수 도메인 코어 (@privateagent/shared)</text>
+
+    <!-- 3x3 Grid of 9 modules -->
+    <!-- Row 1 -->
+    <rect x="20" y="52" width="424" height="84" rx="10" fill="#ffffff" stroke="#99f6e4" stroke-width="1.2"/>
+    <text x="34" y="74" class="mono" fill="#0f766e">privacy/</text>
+    <text x="34" y="95" class="body-text">한국형 PII 마스커(masker.ts) · 약관 레지스트리</text>
+    <text x="34" y="114" class="body-text">주민번호·계좌·연락처·키 실시간 2중 마스킹</text>
+
+    <rect x="460" y="52" width="424" height="84" rx="10" fill="#ffffff" stroke="#99f6e4" stroke-width="1.2"/>
+    <text x="474" y="74" class="mono" fill="#0f766e">subagents/</text>
+    <text x="474" y="95" class="body-text">0번 라우터 · 4번 16도메인 RAG (~300선)</text>
+    <text x="474" y="114" class="body-text">7-B 방역 · Canonical Data Graph · 7-A/C 가드레일</text>
+
+    <rect x="900" y="52" width="424" height="84" rx="10" fill="#ffffff" stroke="#99f6e4" stroke-width="1.2"/>
+    <text x="914" y="74" class="mono" fill="#0f766e">finance/</text>
+    <text x="914" y="95" class="body-text">포맷터 · 기술지표(RSI/MACD/BB) · 티커가드</text>
+    <text x="914" y="114" class="body-text">요약분리기 · 1,408 심볼 카탈로그 · 랜딩 모델</text>
+
+    <!-- Row 2 -->
+    <rect x="20" y="148" width="424" height="84" rx="10" fill="#ffffff" stroke="#99f6e4" stroke-width="1.2"/>
+    <text x="34" y="170" class="mono" fill="#0f766e">strategy/</text>
+    <text x="34" y="191" class="body-text">자연어 룰 파서 · 13F 구루 프리셋</text>
+    <text x="34" y="210" class="body-text">백테스트 엔진 · 컴플라이언스 가드레일</text>
+
+    <rect x="460" y="148" width="424" height="84" rx="10" fill="#ffffff" stroke="#99f6e4" stroke-width="1.2"/>
+    <text x="474" y="170" class="mono" fill="#0f766e">portfolio/</text>
+    <text x="474" y="191" class="body-text">보유 종목 텍스트/OCR 정규화 파서</text>
+    <text x="474" y="210" class="body-text">자산배분 · 상관관계 · 리밸런싱 퀀트 엔진</text>
+
+    <rect x="900" y="148" width="424" height="84" rx="10" fill="#ffffff" stroke="#99f6e4" stroke-width="1.2"/>
+    <text x="914" y="170" class="mono" fill="#0f766e">trading/</text>
+    <text x="914" y="191" class="body-text">미국 티커 레지스트리 · 미장 세션 판별</text>
+    <text x="914" y="210" class="body-text">주문 수량/금액 계산 · 트레이딩 컴플라이언스</text>
+
+    <!-- Row 3 -->
+    <rect x="20" y="244" width="424" height="80" rx="10" fill="#ffffff" stroke="#99f6e4" stroke-width="1.2"/>
+    <text x="34" y="266" class="mono" fill="#0f766e">notifications/</text>
+    <text x="34" y="287" class="body-text">개인화 알림 분류 정책 (60건 캡 · 90일 TTL)</text>
+    <text x="34" y="305" class="body-text">dedupe_key 중복 제거 · 딥링크 정규화</text>
+
+    <rect x="460" y="244" width="424" height="80" rx="10" fill="#ffffff" stroke="#99f6e4" stroke-width="1.2"/>
+    <text x="474" y="266" class="mono" fill="#0f766e">voice/</text>
+    <text x="474" y="287" class="body-text">TTS 금융 텍스트 정화기 · 청크 분할기</text>
+    <text x="474" y="305" class="body-text">음성 메타 명령 분류기 (일 1,000원 가드)</text>
+
+    <rect x="900" y="244" width="424" height="80" rx="10" fill="#ffffff" stroke="#99f6e4" stroke-width="1.2"/>
+    <text x="914" y="266" class="mono" fill="#0f766e">analytics/</text>
+    <text x="914" y="287" class="body-text">Amplitude 디바이스/채널 분류 · Zero-PII 필터</text>
+    <text x="914" y="305" class="body-text">HTTP V2 페이로드 빌더 (46종 금지키 차단)</text>
+  </g>
+
+  <!-- LAYER 3: QA · Data · Scripts · Product Hub (4 columns) -->
+  <g transform="translate(48, 734)">
+    <!-- packages/lara-qa -->
+    <rect x="0" y="0" width="320" height="196" rx="14" fill="#fffbeb" stroke="#f59e0b" stroke-width="2" filter="url(#shadow)"/>
+    <rect x="16" y="14" width="134" height="24" rx="6" fill="#d97706"/>
+    <text x="83" y="30" class="badge-text" text-anchor="middle">packages/lara-qa</text>
+    <text x="16" y="60" class="body-bold" fill="#92400e">4단 독립 품질검증 엔진</text>
+    <text x="16" y="84" class="body-text">• Q0 ~ Q3 루브릭 오케스트레이터</text>
+    <text x="16" y="106" class="body-text">• 102+ 단위 테스트 &amp; 벤치마크</text>
+    <text x="16" y="128" class="body-text">• 수치 일관성 · 가드레일 자동 검증</text>
+    <rect x="16" y="152" width="288" height="26" rx="8" fill="#fef3c7"/>
+    <text x="160" y="169" class="pill-text" fill="#92400e" text-anchor="middle">Node Test Runner · TypeScript</text>
+
+    <!-- supabase/migrations -->
+    <rect x="340" y="0" width="324" height="196" rx="14" fill="#f5f3ff" stroke="#7c3aed" stroke-width="2" filter="url(#shadow)"/>
+    <rect x="356" y="14" width="166" height="24" rx="6" fill="#6d28d9"/>
+    <text x="439" y="30" class="badge-text" text-anchor="middle">supabase/migrations</text>
+    <text x="356" y="60" class="body-bold" fill="#4c1d95">PostgreSQL 15 · 물리 격리 DB</text>
+    <text x="356" y="84" class="body-text">• 17개 SQL 마이그레이션 스키마</text>
+    <text x="356" y="106" class="body-text">• public vs pii_vault 물리 격리</text>
+    <text x="356" y="128" class="body-text">• FORCE RLS · pgcrypto · pgvector</text>
+    <rect x="356" y="152" width="292" height="26" rx="8" fill="#ede9fe"/>
+    <text x="502" y="169" class="pill-text" fill="#5b21b6" text-anchor="middle">멀티-TTL 캐시 · 1,408 기업 마스터</text>
+
+    <!-- scripts/ -->
+    <rect x="684" y="0" width="320" height="196" rx="14" fill="#f8fafc" stroke="#475569" stroke-width="2" filter="url(#shadow)"/>
+    <rect x="700" y="14" width="84" height="24" rx="6" fill="#334155"/>
+    <text x="742" y="30" class="badge-text" text-anchor="middle">scripts/</text>
+    <text x="700" y="60" class="body-bold" fill="#0f172a">자동화 · 동기화 · 발행 CLI</text>
+    <text x="700" y="84" class="body-text">• sync-product-hub.mjs (허브 동기화)</text>
+    <text x="700" y="106" class="body-text">• publish-product-hub-pages.mjs</text>
+    <text x="700" y="128" class="body-text">• publish-session-logs-pages.mjs</text>
+    <rect x="700" y="152" width="288" height="26" rx="8" fill="#e2e8f0"/>
+    <text x="844" y="169" class="pill-text" fill="#334155" text-anchor="middle">음성가이드 · 다이어그램 · UI로깅 감사</text>
+
+    <!-- product-hub/ -->
+    <rect x="1024" y="0" width="320" height="196" rx="14" fill="#fff1f2" stroke="#e11d48" stroke-width="2" filter="url(#shadow)"/>
+    <rect x="1040" y="14" width="120" height="24" rx="6" fill="#be123c"/>
+    <text x="1100" y="30" class="badge-text" text-anchor="middle">product-hub/</text>
+    <text x="1040" y="60" class="body-bold" fill="#881337">오너 전용 암호화 Product Hub</text>
+    <text x="1040" y="84" class="body-text">• 12개 마크다운 명세서 (SSOT)</text>
+    <text x="1040" y="106" class="body-text">• Ant Design 정적 웹 허브</text>
+    <text x="1040" y="128" class="body-text">• AES-256-GCM / PBKDF2 210k 암호화</text>
+    <rect x="1040" y="152" width="288" height="26" rx="8" fill="#ffe4e6"/>
+    <text x="1184" y="169" class="pill-text" fill="#9f1239" text-anchor="middle">GitHub Pages 전용 암호화 배포</text>
+  </g>
+
+  <!-- Footer -->
+  <g transform="translate(48, 962)">
+    <line x1="0" y1="0" x2="1344" y2="0" stroke="#cbd5e1" stroke-width="1.2"/>
+    <text x="0" y="28" class="card-sub" fill="#64748b">MARY Private Financial Agent · Monorepo &amp; Tech Stack Architecture (#05-tech) · Vercel icn1 + Supabase + Expo</text>
+    <text x="1344" y="28" class="card-sub" fill="#64748b" text-anchor="end">Vector SVG &amp; High-DPI PNG</text>
+  </g>
+</svg>

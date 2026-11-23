@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1180" width="1600" height="1180">
+  <defs>
+    <style>
+      .title { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", "Segoe UI", Roboto, sans-serif; font-weight: 800; font-size: 25px; fill: #ffffff; letter-spacing: -0.5px; }
+      .subtitle { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", "Segoe UI", Roboto, sans-serif; font-weight: 500; font-size: 13px; fill: #94a3b8; }
+      .badge-text { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", "Segoe UI", Roboto, sans-serif; font-weight: 700; font-size: 11px; fill: #ffffff; }
+      .sec-title { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", "Segoe UI", Roboto, sans-serif; font-weight: 800; font-size: 15px; letter-spacing: -0.3px; }
+      .card-title { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", "Segoe UI", Roboto, sans-serif; font-weight: 700; font-size: 13.5px; letter-spacing: -0.2px; }
+      .card-sub { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", "Segoe UI", Roboto, sans-serif; font-weight: 600; font-size: 11px; fill: #64748b; }
+      .bullet-title { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", "Segoe UI", Roboto, sans-serif; font-weight: 700; font-size: 11.5px; fill: #0f172a; }
+      .bullet-desc { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", "Segoe UI", Roboto, sans-serif; font-weight: 400; font-size: 10.5px; fill: #475569; }
+      .tag-text { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", "Segoe UI", Roboto, sans-serif; font-weight: 700; font-size: 10.5px; }
+    </style>
+
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+
+    <linearGradient id="headerGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="55%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <filter id="shadow" x="-3%" y="-3%" width="106%" height="108%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.06"/>
+    </filter>
+    <filter id="shadowStrong" x="-4%" y="-4%" width="108%" height="110%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1180" fill="url(#bgGrad)"/>
+
+  <!-- Header -->
+  <g transform="translate(24, 20)">
+    <rect width="1552" height="86" rx="16" fill="url(#headerGrad)" filter="url(#shadowStrong)"/>
+    <text x="28" y="40" class="title">MARY 프라이빗 금융 에이전트 전체 정보구조 (Information Architecture)</text>
+    <text x="28" y="64" class="subtitle">실제 구현 코드베이스(SSOT) 기준 · 7대 메인 워크스페이스 · 특수 오버레이 · 비-LLM 결정론 에이전트 · Supabase 17개 마이그레이션</text>
+
+    <g transform="translate(1110, 26)">
+      <rect x="0" y="0" width="136" height="32" rx="16" fill="#2563eb"/>
+      <text x="68" y="20" class="badge-text" text-anchor="middle">7대 워크스페이스</text>
+      <rect x="148" y="0" width="136" height="32" rx="16" fill="#0d9488"/>
+      <text x="216" y="20" class="badge-text" text-anchor="middle">31화면 · 133메뉴</text>
+      <rect x="296" y="0" width="128" height="32" rx="16" fill="#7c3aed"/>
+      <text x="360" y="20" class="badge-text" text-anchor="middle">46종 Zero-PII</text>
+    </g>
+  </g>
+
+  <!-- LAYER 1: 진입 & 전역 셸 -->
+  <g transform="translate(24, 126)">
+    <rect width="1552" height="142" rx="14" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.8" filter="url(#shadow)"/>
+    <rect x="16" y="14" width="186" height="24" rx="6" fill="#1d4ed8"/>
+    <text x="109" y="30" class="badge-text" text-anchor="middle">계층 1 · 진입 &amp; 전역 셸</text>
+    <text x="214" y="31" class="sec-title" fill="#1e3a8a">인증 게이트 · 반응형 내비게이션 · PWA 인프라</text>
+
+    <rect x="16" y="48" width="496" height="78" rx="10" fill="#ffffff" stroke="#bfdbfe" stroke-width="1.2"/>
+    <text x="32" y="70" class="card-title" fill="#1e40af">무로그인 기기 격리 &amp; 제로 플래시 게이트</text>
+    <text x="32" y="90" class="bullet-desc">• HMAC 서명 쿠키(mary_uid) + 백업 토큰 기반 anon_user_id 완전 격리</text>
+    <text x="32" y="108" class="bullet-desc">• MaryAuthGateOverlay: 자동로그인 확인 전 '로그인 중...' 게이트로 깜빡임 차단</text>
+
+    <rect x="528" y="48" width="496" height="78" rx="10" fill="#ffffff" stroke="#bfdbfe" stroke-width="1.2"/>
+    <text x="544" y="70" class="card-title" fill="#1e40af">데스크톱 3단 레일 &amp; 모바일 5대 슬림 탭바</text>
+    <text x="544" y="90" class="bullet-desc">• 미니멀 상단바([≡] MARY + 알림함 필) · Ant Design v6 메신저 에디션</text>
+    <text x="544" y="108" class="bullet-desc">• 모바일 스와이프 좌측 드로어 &amp; 하단 5대 탭(대화·발견·피드·전략·포트폴리오)</text>
+
+    <rect x="1040" y="48" width="496" height="78" rx="10" fill="#ffffff" stroke="#bfdbfe" stroke-width="1.2"/>
+    <text x="1056" y="70" class="card-title" fill="#1e40af">다단 인앱 History Back &amp; PWA 자동 동기화</text>
+    <text x="1056" y="90" class="bullet-desc">• subpageState.ts (?tab= + sessionStorage) 새로고침·PTR 시 현재 위치 보존</text>
+    <text x="1056" y="108" class="bullet-desc">• 탭/서브탭/드로어/시트 다단 뒤로가기 스택 · manifest.ts + sw.js 홈 화면 설치</text>
+  </g>
+
+  <!-- LAYER 2: 7대 메인 워크스페이스 -->
+  <g transform="translate(24, 286)">
+    <rect width="1552" height="394" rx="14" fill="#f0fdfa" stroke="#0d9488" stroke-width="1.8" filter="url(#shadow)"/>
+    <rect x="16" y="14" width="218" height="24" rx="6" fill="#0f766e"/>
+    <text x="125" y="30" class="badge-text" text-anchor="middle">계층 2 · 7대 메인 워크스페이스</text>
+    <text x="246" y="31" class="sec-title" fill="#134e4a">실제 구현된 7대 핵심 화면 (#01-ia 기준 100% 일치)</text>
+
+    <!-- 7 cards: width=206, gap=12 => 7*206 + 6*12 = 1442 + 72 = 1514, left=19 -->
+    <!-- 01 대화 (chat) -->
+    <g transform="translate(18, 50)">
+      <rect width="206" height="328" rx="12" fill="#ffffff" stroke="#0d9488" stroke-width="1.8"/>
+      <rect x="12" y="12" width="32" height="20" rx="10" fill="#ccfbf1"/>
+      <text x="28" y="26" class="tag-text" fill="#0f766e" text-anchor="middle">01</text>
+      <text x="52" y="27" class="card-title" fill="#0f172a">대화 (chat)</text>
+      <text x="12" y="45" class="card-sub">AI 금융 파트너 메인</text>
+      <line x1="12" y1="53" x2="194" y2="53" stroke="#e2e8f0" stroke-width="1"/>
+      <text x="12" y="72" class="bullet-title">선제 인사 &amp; 지연 스레드</text>
+      <text x="12" y="87" class="bullet-desc">• 첫 발화 시 mary_threads 적재</text>
+      <text x="12" y="102" class="bullet-desc">• 후속 작업·최근 대화 랜딩</text>
+      <text x="12" y="128" class="bullet-title">10종 위젯 선노출</text>
+      <text x="12" y="143" class="bullet-desc">• SSE meta ~0.5초 즉시 렌더링</text>
+      <text x="12" y="158" class="bullet-desc">• 16.2px 메신저 가독성 UI</text>
+      <text x="12" y="184" class="bullet-title">4줄 요약 &amp; 피드백</text>
+      <text x="12" y="199" class="bullet-desc">• summary_delta 실시간 분리</text>
+      <text x="12" y="214" class="bullet-desc">• 매우좋아요·좋아요·싫어요</text>
+      <text x="12" y="240" class="bullet-title">멀티모달 &amp; 컴포저</text>
+      <text x="12" y="255" class="bullet-desc">• 이미지 캡처 첨부 · 음성</text>
+      <text x="12" y="270" class="bullet-desc">• 법정 면책 100% 자동 부착</text>
+      <rect x="12" y="294" width="182" height="22" rx="6" fill="#f0fdfa"/>
+      <text x="103" y="309" class="tag-text" fill="#0f766e" text-anchor="middle">tab=chat</text>
+    </g>
+
+    <!-- 02 발견 (discover) -->
+    <g transform="translate(236, 50)">
+      <rect width="206" height="328" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+      <rect x="12" y="12" width="32" height="20" rx="10" fill="#e0f2fe"/>
+      <text x="28" y="26" class="tag-text" fill="#0369a1" text-anchor="middle">02</text>
+      <text x="52" y="27" class="card-title" fill="#0f172a">발견 (discover)</text>
+      <text x="12" y="45" class="card-sub">시장 펄스 · 종목 탐색</text>
+      <line x1="12" y1="53" x2="194" y2="53" stroke="#e2e8f0" stroke-width="1"/>
+      <text x="12" y="72" class="bullet-title">KST 주/야간 마켓 펄스</text>
+      <text x="12" y="87" class="bullet-desc">• 09~18시 KR / 18~09시 US</text>
+      <text x="12" y="102" class="bullet-desc">• 20초 캐시 · 30초 UI 폴링</text>
+      <text x="12" y="128" class="bullet-title">4대 실시간 랭킹</text>
+      <text x="12" y="143" class="bullet-desc">• 거래대금 · 급등 · 급락 · 인기</text>
+      <text x="12" y="158" class="bullet-desc">• Top-200 로컬 WebP 로고</text>
+      <text x="12" y="184" class="bullet-title">종목 상세 시트</text>
+      <text x="12" y="199" class="bullet-desc">• MaryStockDetailSheet</text>
+      <text x="12" y="214" class="bullet-desc">• 캔들 차트 · 재무 · 공시</text>
+      <text x="12" y="240" class="bullet-title">대화 · 트레이딩 연결</text>
+      <text x="12" y="255" class="bullet-desc">• 원클릭 MARY 질문 연결</text>
+      <text x="12" y="270" class="bullet-desc">• 관심종목 즉시 추가/해제</text>
+      <rect x="12" y="294" width="182" height="22" rx="6" fill="#f1f5f9"/>
+      <text x="103" y="309" class="tag-text" fill="#475569" text-anchor="middle">tab=discover</text>
+    </g>
+
+    <!-- 03 피드 (feed) -->
+    <g transform="translate(454, 50)">
+      <rect width="206" height="328" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+      <rect x="12" y="12" width="32" height="20" rx="10" fill="#e0f2fe"/>
+      <text x="28" y="26" class="tag-text" fill="#0369a1" text-anchor="middle">03</text>
+      <text x="52" y="27" class="card-title" fill="#0f172a">피드 (feed)</text>
+      <text x="12" y="45" class="card-sub">맞춤 시황 · 외신 브리핑</text>
+      <line x1="12" y1="53" x2="194" y2="53" stroke="#e2e8f0" stroke-width="1"/>
+      <text x="12" y="72" class="bullet-title">국내 우선 정렬 (FEED_V4)</text>
+      <text x="12" y="87" class="bullet-desc">• 관심종목 연동 맞춤 브리핑</text>
+      <text x="12" y="102" class="bullet-desc">• 30분 공용 캐시 비용 절감</text>
+      <text x="12" y="128" class="bullet-title">해외 뉴스 번역요약 시트</text>
+      <text x="12" y="143" class="bullet-desc">• MaryNewsSummarySheet</text>
+      <text x="12" y="158" class="bullet-desc">• 외신 원문 번역 + 핵심 요약</text>
+      <text x="12" y="184" class="bullet-title">7-B 인바운드 정화</text>
+      <text x="12" y="199" class="bullet-desc">• 스탁론/리딩 스팸 필터링</text>
+      <text x="12" y="214" class="bullet-desc">• 유사 기사 중복 병합</text>
+      <text x="12" y="240" class="bullet-title">14일 TTL 자동 관리</text>
+      <text x="12" y="255" class="bullet-desc">• mary_feed_items 영속화</text>
+      <text x="12" y="270" class="bullet-desc">• 출처 URL 배지 제공</text>
+      <rect x="12" y="294" width="182" height="22" rx="6" fill="#f1f5f9"/>
+      <text x="103" y="309" class="tag-text" fill="#475569" text-anchor="middle">tab=feed</text>
+    </g>
+
+    <!-- 04 투자전략 (strategy) -->
+    <g transform="translate(672, 50)">
+      <rect width="206" height="328" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+      <rect x="12" y="12" width="32" height="20" rx="10" fill="#e0f2fe"/>
+      <text x="28" y="26" class="tag-text" fill="#0369a1" text-anchor="middle">04</text>
+      <text x="52" y="27" class="card-title" fill="#0f172a">투자전략 (strategy)</text>
+      <text x="12" y="45" class="card-sub">대가 전략 · 백테스트</text>
+      <line x1="12" y1="53" x2="194" y2="53" stroke="#e2e8f0" stroke-width="1"/>
+      <text x="12" y="72" class="bullet-title">대가 전략 (Guru)</text>
+      <text x="12" y="87" class="bullet-desc">• 13F 구루 프리셋 캐러셀</text>
+      <text x="12" y="102" class="bullet-desc">• 거장별 핵심 매수 룰 적용</text>
+      <text x="12" y="128" class="bullet-title">직접 만들기 (Self)</text>
+      <text x="12" y="143" class="bullet-desc">• 자연어 룰 파서 조건 생성</text>
+      <text x="12" y="158" class="bullet-desc">• 반응형 백테스트 차트</text>
+      <text x="12" y="184" class="bullet-title">내 전략 보관함 (Vault)</text>
+      <text x="12" y="199" class="bullet-desc">• mary_strategies (180일 TTL)</text>
+      <text x="12" y="214" class="bullet-desc">• 전략 저장 시 알림 적재</text>
+      <text x="12" y="240" class="bullet-title">모의투자 (Paper)</text>
+      <text x="12" y="255" class="bullet-desc">• 실전 트레이딩 드로어 연계</text>
+      <text x="12" y="270" class="bullet-desc">• 컴플라이언스 가드레일</text>
+      <rect x="12" y="294" width="182" height="22" rx="6" fill="#f1f5f9"/>
+      <text x="103" y="309" class="tag-text" fill="#475569" text-anchor="middle">tab=strategy (4서브탭)</text>
+    </g>
+
+    <!-- 05 포트폴리오 (portfolio) -->
+    <g transform="translate(890, 50)">
+      <rect width="206" height="328" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+      <rect x="12" y="12" width="32" height="20" rx="10" fill="#e0f2fe"/>
+      <text x="28" y="26" class="tag-text" fill="#0369a1" text-anchor="middle">05</text>
+      <text x="52" y="27" class="card-title" fill="#0f172a">포트폴리오</text>
+      <text x="12" y="45" class="card-sub">자산현황 · 퀀트 리밸런싱</text>
+      <line x1="12" y1="53" x2="194" y2="53" stroke="#e2e8f0" stroke-width="1"/>
+      <text x="12" y="72" class="bullet-title">2탭 구조 (자산현황 / 퀀트)</text>
+      <text x="12" y="87" class="bullet-desc">• 비중(%) SVG 도넛 차트</text>
+      <text x="12" y="102" class="bullet-desc">• 종목 추가·편집 입력 시트</text>
+      <text x="12" y="128" class="bullet-title">비전 OCR &amp; 자가치유</text>
+      <text x="12" y="143" class="bullet-desc">• 증권앱 캡처 [평가금] 파싱</text>
+      <text x="12" y="158" class="bullet-desc">• reconcile · Live Self-Heal</text>
+      <text x="12" y="184" class="bullet-title">퀀트 분석 &amp; 리밸런싱</text>
+      <text x="12" y="199" class="bullet-desc">• 상관관계 · 리스크 진단</text>
+      <text x="12" y="214" class="bullet-desc">• 목표 비중 리밸런싱 시트</text>
+      <text x="12" y="240" class="bullet-title">대화 &amp; 알림 연계</text>
+      <text x="12" y="255" class="bullet-desc">• 진단 결과 MARY 대화 연결</text>
+      <text x="12" y="270" class="bullet-desc">• mary_portfolios (180일 TTL)</text>
+      <rect x="12" y="294" width="182" height="22" rx="6" fill="#f1f5f9"/>
+      <text x="103" y="309" class="tag-text" fill="#475569" text-anchor="middle">tab=portfolio (2서브탭)</text>
+    </g>
+
+    <!-- 06 메모 (notes) -->
+    <g transform="translate(1108, 50)">
+      <rect width="206" height="328" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+      <rect x="12" y="12" width="32" height="20" rx="10" fill="#e0f2fe"/>
+      <text x="28" y="26" class="tag-text" fill="#0369a1" text-anchor="middle">06</text>
+      <text x="52" y="27" class="card-title" fill="#0f172a">메모 (notes)</text>
+      <text x="12" y="45" class="card-sub">투자 기록 · MARY 자동 메모</text>
+      <line x1="12" y1="53" x2="194" y2="53" stroke="#e2e8f0" stroke-width="1"/>
+      <text x="12" y="72" class="bullet-title">3대 필터 뷰</text>
+      <text x="12" y="87" class="bullet-desc">• 전체 · 고정됨 · MARY 기록</text>
+      <text x="12" y="102" class="bullet-desc">• 중요 분석 턴 자동 적재</text>
+      <text x="12" y="128" class="bullet-title">3줄 핵심 요약 연동</text>
+      <text x="12" y="143" class="bullet-desc">• 대화 내 핵심 인사이트 저장</text>
+      <text x="12" y="158" class="bullet-desc">• 새 투자 메모 직접 작성</text>
+      <text x="12" y="184" class="bullet-title">컨텍스트 재활용</text>
+      <text x="12" y="199" class="bullet-desc">• maryBrain 답변 시 자동 참조</text>
+      <text x="12" y="214" class="bullet-desc">• 개인화 투자 성향 축적</text>
+      <text x="12" y="240" class="bullet-title">영속화 &amp; 보안</text>
+      <text x="12" y="255" class="bullet-desc">• mary_notes 기기/계정 격리</text>
+      <text x="12" y="270" class="bullet-desc">• 원문 Zero-PII 로깅 차단</text>
+      <rect x="12" y="294" width="182" height="22" rx="6" fill="#f1f5f9"/>
+      <text x="103" y="309" class="tag-text" fill="#475569" text-anchor="middle">tab=notes</text>
+    </g>
+
+    <!-- 07 설정 (settings) -->
+    <g transform="translate(1326, 50)">
+      <rect width="208" height="328" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+      <rect x="12" y="12" width="32" height="20" rx="10" fill="#e0f2fe"/>
+      <text x="28" y="26" class="tag-text" fill="#0369a1" text-anchor="middle">07</text>
+      <text x="52" y="27" class="card-title" fill="#0f172a">설정 (settings)</text>
+      <text x="12" y="45" class="card-sub">관심종목 · 기억 · 보안</text>
+      <line x1="12" y1="53" x2="196" y2="53" stroke="#e2e8f0" stroke-width="1"/>
+      <text x="12" y="72" class="bullet-title">관심종목 (최대 20개)</text>
+      <text x="12" y="87" class="bullet-desc">• MaryWatchlistWorkspace</text>
+      <text x="12" y="102" class="bullet-desc">• 피드·대화 우선 반영</text>
+      <text x="12" y="128" class="bullet-title">장기기억 &amp; 투자 성향</text>
+      <text x="12" y="143" class="bullet-desc">• 선호 브리핑 톤 · 기억 관리</text>
+      <text x="12" y="158" class="bullet-desc">• 따봉 피드백 스타일 학습</text>
+      <text x="12" y="184" class="bullet-title">계정 &amp; 약관 동의</text>
+      <text x="12" y="199" class="bullet-desc">• 회원가입/로그인/로그아웃</text>
+      <text x="12" y="214" class="bullet-desc">• 개인정보 수집·보관 관리</text>
+      <text x="12" y="240" class="bullet-title">트레이딩 PIN &amp; 연동</text>
+      <text x="12" y="255" class="bullet-desc">• 6자리 PIN 설정/변경</text>
+      <text x="12" y="270" class="bullet-desc">• 브로커·외부 서비스 연동</text>
+      <rect x="12" y="294" width="184" height="22" rx="6" fill="#f1f5f9"/>
+      <text x="104" y="309" class="tag-text" fill="#475569" text-anchor="middle">tab=settings</text>
+    </g>
+  </g>
+
+  <!-- LAYER 3: 특수 오버레이 & 에이전트 코어 -->
+  <g transform="translate(24, 698)">
+    <rect width="1552" height="214" rx="14" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.8" filter="url(#shadow)"/>
+    <rect x="16" y="14" width="234" height="24" rx="6" fill="#6d28d9"/>
+    <text x="133" y="30" class="badge-text" text-anchor="middle">계층 3 · 특수 오버레이 &amp; 에이전트</text>
+    <text x="262" y="31" class="sec-title" fill="#4c1d95">전역 드로어 · 실시간 음성 · 오너 보관함 · maryBrain 결정론 파이프라인</text>
+
+    <!-- 5 cards: width=294, gap=12 => 5*294 + 4*12 = 1470 + 48 = 1518 -->
+    <rect x="16" y="50" width="294" height="148" rx="10" fill="#ffffff" stroke="#ddd6fe" stroke-width="1.2"/>
+    <text x="30" y="74" class="card-title" fill="#5b21b6">미국주식 트레이딩 드로어</text>
+    <text x="30" y="94" class="bullet-desc">• MaryTradingDrawer (6자리 PIN)</text>
+    <text x="30" y="112" class="bullet-desc">• 호가·주문 / 계좌·잔고 / 연동·보안</text>
+    <text x="30" y="130" class="bullet-desc">• 데모 $50K · 제휴사 · 한투 어댑터</text>
+    <text x="30" y="148" class="bullet-desc">• mary_order_audit_logs (90일 TTL)</text>
+    <rect x="30" y="164" width="266" height="22" rx="6" fill="#ede9fe"/>
+    <text x="163" y="179" class="tag-text" fill="#5b21b6" text-anchor="middle">pii_vault AES-256-GCM 암호화</text>
+
+    <rect x="322" y="50" width="294" height="148" rx="10" fill="#ffffff" stroke="#ddd6fe" stroke-width="1.2"/>
+    <text x="336" y="74" class="card-title" fill="#5b21b6">전역 알림함 (알림 센터)</text>
+    <text x="336" y="94" class="bullet-desc">• MaryNotificationDrawer</text>
+    <text x="336" y="112" class="bullet-desc">• 대화·포트폴리오·전략 이벤트 알림</text>
+    <text x="336" y="130" class="bullet-desc">• dedupe_key 중복 제거 · 최대 60건</text>
+    <text x="336" y="148" class="bullet-desc">• 해당 탭/메시지 딥링크 즉시 이동</text>
+    <rect x="336" y="164" width="266" height="22" rx="6" fill="#ede9fe"/>
+    <text x="469" y="179" class="tag-text" fill="#5b21b6" text-anchor="middle">90일 TTL · 인메모리 안전 폴백</text>
+
+    <rect x="628" y="50" width="294" height="148" rx="10" fill="#ffffff" stroke="#ddd6fe" stroke-width="1.2"/>
+    <text x="642" y="74" class="card-title" fill="#5b21b6">실시간 음성 (Voice Live)</text>
+    <text x="642" y="94" class="bullet-desc">• MaryVoiceOverlay (STT · TTS)</text>
+    <text x="642" y="112" class="bullet-desc">• 금융 텍스트 정화기 &amp; 청크 분할</text>
+    <text x="642" y="130" class="bullet-desc">• gemini-3.8-flash 계열 오디오</text>
+    <text x="642" y="148" class="bullet-desc">• voiceBudgetGuard 사전 예산 예약</text>
+    <rect x="642" y="164" width="266" height="22" rx="6" fill="#ede9fe"/>
+    <text x="775" y="179" class="tag-text" fill="#5b21b6" text-anchor="middle">일 1,000원 하드캡 방어</text>
+
+    <rect x="934" y="50" width="294" height="148" rx="10" fill="#ffffff" stroke="#ddd6fe" stroke-width="1.2"/>
+    <text x="948" y="74" class="card-title" fill="#5b21b6">/artifect 오너 보관함</text>
+    <text x="948" y="94" class="bullet-desc">• artifect_lock / hub / detail</text>
+    <text x="948" y="112" class="bullet-desc">• 2,400 문항 골든 벤치마크 데이터</text>
+    <text x="948" y="130" class="bullet-desc">• 4단 LARA-QA 루브릭 평가 리포트</text>
+    <text x="948" y="148" class="bullet-desc">• 오너 전용 인증 게이트 보호</text>
+    <rect x="948" y="164" width="266" height="22" rx="6" fill="#ede9fe"/>
+    <text x="1081" y="179" class="tag-text" fill="#5b21b6" text-anchor="middle">오너 전용 품질/평가 아카이브</text>
+
+    <rect x="1240" y="50" width="294" height="148" rx="10" fill="#ffffff" stroke="#ddd6fe" stroke-width="1.2"/>
+    <text x="1254" y="74" class="card-title" fill="#5b21b6">maryBrain &amp; 0~4 수집기</text>
+    <text x="1254" y="94" class="bullet-desc">• 0번 라우터 + 1~4번 병렬 수집(LLM 0회)</text>
+    <text x="1254" y="112" class="bullet-desc">• Canonical Data Graph 동적 조인</text>
+    <text x="1254" y="130" class="bullet-desc">• gemini-4-hydrogen 턴당 1회 추론</text>
+    <text x="1254" y="148" class="bullet-desc">• 7-A/B/C 입·출구 가드레일 정화</text>
+    <rect x="1254" y="164" width="266" height="22" rx="6" fill="#ede9fe"/>
+    <text x="1387" y="179" class="tag-text" fill="#5b21b6" text-anchor="middle">세부 구조: #04-agent 참조</text>
+  </g>
+
+  <!-- LAYER 4: 백엔드 인프라 · 데이터 · 운영 허브 -->
+  <g transform="translate(24, 930)">
+    <rect width="1552" height="176" rx="14" fill="#f8fafc" stroke="#475569" stroke-width="1.8" filter="url(#shadow)"/>
+    <rect x="16" y="14" width="248" height="24" rx="6" fill="#334155"/>
+    <text x="140" y="30" class="badge-text" text-anchor="middle">계층 4 · 데이터 · 관측성 · 운영</text>
+    <text x="276" y="31" class="sec-title" fill="#0f172a">Supabase 물리 격리 DB · Amplitude/Langfuse 관측 · 암호화 Product Hub</text>
+
+    <rect x="16" y="48" width="496" height="112" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+    <text x="32" y="72" class="card-title" fill="#0f172a">Supabase PostgreSQL 15 (물리 격리 · 17개 마이그레이션)</text>
+    <text x="32" y="94" class="bullet-desc">• public(비식별) vs pii_vault(민감 금고) 스키마 분리 + FORCE RLS</text>
+    <text x="32" y="112" class="bullet-desc">• 멀티-TTL 주식 캐시(3m/5h · 24h) · 1,408개 상장사 마스터 카탈로그</text>
+    <text x="32" y="130" class="bullet-desc">• Vercel Cron (매일 03:00 KST) 자동 수명 파기 배치</text>
+    <text x="32" y="148" class="bullet-desc">• Expo React Native (@privateagent/mobile) 확장 앱 공통 API 서빙</text>
+
+    <rect x="528" y="48" width="496" height="112" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+    <text x="544" y="72" class="card-title" fill="#0f172a">Zero-PII 계측 &amp; 3중 UI 로깅 가드레일</text>
+    <text x="544" y="94" class="bullet-desc">• Amplitude HTTP V2: 31화면 × 133메뉴 × 31위치 실시간 트래킹</text>
+    <text x="544" y="112" class="bullet-desc">• 46종 금지키 자동 Drop + 200자 마스킹 + check:ui-logging Stop 훅</text>
+    <text x="544" y="130" class="bullet-desc">• Langfuse SDK: userId/threadId 단방향 HMAC 해시 비식별 트레이싱</text>
+    <text x="544" y="148" class="bullet-desc">• 4단 LARA-QA (Q0~Q3) 자동 품질·컴플라이언스 벤치마크</text>
+
+    <rect x="1040" y="48" width="496" height="112" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+    <text x="1056" y="72" class="card-title" fill="#0f172a">오너 전용 Product Hub &amp; Zero-PII 세션로그 포털</text>
+    <text x="1056" y="94" class="bullet-desc">• 12개 SSOT 마크다운 명세서 + 벡터 아키텍처 다이어그램 4종</text>
+    <text x="1056" y="112" class="bullet-desc">• AES-256-GCM / PBKDF2(210k) 브라우저 복호화 GitHub Pages</text>
+    <text x="1056" y="130" class="bullet-desc">• Zero-PII 자동 검증 후 세션로그 전용 포털 원격 동기화</text>
+    <text x="1056" y="148" class="bullet-desc">• Vercel 서울 리전(icn1) 프로덕션 호스팅</text>
+  </g>
+
+  <!-- Footer -->
+  <g transform="translate(24, 1126)">
+    <line x1="0" y1="0" x2="1552" y2="0" stroke="#cbd5e1" stroke-width="1.2"/>
+    <text x="0" y="24" class="card-sub" fill="#64748b">MARY Private Financial Agent · Information Architecture Diagram (#01-ia) · Codebase SSOT Verified · Zero-PII</text>
+    <text x="1552" y="24" class="card-sub" fill="#64748b" text-anchor="end">Vector SVG &amp; High-DPI PNG</text>
+  </g>
+</svg>

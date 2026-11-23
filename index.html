@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="ko" data-theme="light" data-density="default">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>MARY 프로덕트 허브</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
+    />
+    <link rel="stylesheet" href="./assets/hub.css?v=1795444975273" />
+  </head>
+  <body>
+    <div
+      id="vault-lock-screen"
+      class="vault-lock-backdrop hidden"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="vault-lock-title"
+    >
+      <div class="vault-lock-card">
+        <div class="vault-lock-emblem" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2.5 4.5 5.8v5.5c0 4.9 3.2 9.4 7.5 10.7 4.3-1.3 7.5-5.8 7.5-10.7V5.8L12 2.5Z" />
+            <rect x="9.2" y="10.8" width="5.6" height="4.4" rx="1.1" />
+            <path d="M10.4 10.8V9.2a1.6 1.6 0 1 1 3.2 0v1.6" />
+          </svg>
+        </div>
+        <h1 id="vault-lock-title" class="vault-lock-title">MARY 프로덕트 허브</h1>
+        <form id="vault-lock-form" class="vault-lock-form">
+          <div class="vault-lock-input-wrap">
+            <input
+              id="vault-pass-input"
+              class="vault-lock-input"
+              type="text"
+              lang="en"
+              inputmode="url"
+              autocomplete="off"
+              autocapitalize="off"
+              autocorrect="off"
+              spellcheck="false"
+              data-1p-ignore="true"
+              data-lpignore="true"
+              placeholder="비밀번호 입력"
+              required
+            />
+            <button
+              id="vault-toggle-mask-btn"
+              class="vault-mask-toggle"
+              type="button"
+              aria-label="입력 문자 표시 전환"
+            >
+              표시
+            </button>
+          </div>
+          <div id="vault-lock-error" class="vault-lock-error hidden"></div>
+          <button id="vault-unlock-btn" class="vault-lock-submit" type="submit">확인</button>
+        </form>
+      </div>
+    </div>
+
+    <header id="app-topbar" class="topbar">
+      <div class="topbar-left">
+        <button id="mobile-menu-btn" class="menu-toggle-btn" type="button" aria-label="메뉴 열기">☰</button>
+        <a href="#overview" class="brand" data-nav="overview">
+          <span class="brand-mark">m</span>
+          <span class="brand-text">
+            <strong>mary Product Hub</strong>
+            <small>Ant Design Console</small>
+          </span>
+        </a>
+        <span class="badge badge-emerald topbar-owner-tag" title="개인정보·계정·시크릿 자동 마스킹 검증">
+          Zero-PII Verified
+        </span>
+      </div>
+
+      <div id="global-search-wrap" class="topbar-center">
+        <div class="search-input-wrap">
+          <span class="search-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="7" />
+              <path d="m20 20-3.5-3.5" />
+            </svg>
+          </span>
+          <input
+            id="global-search-input"
+            class="search-input"
+            type="search"
+            placeholder="문서, 정책, 테이블, Q&amp;A 검색..."
+            autocomplete="off"
+          />
+          <span class="search-kbd">/</span>
+        </div>
+        <div id="global-search-results" class="search-results-dropdown hidden" role="listbox"></div>
+      </div>
+
+      <div class="topbar-right">
+        <span id="sync-timestamp-pill" class="sync-meta-pill">동기화 확인 중...</span>
+        <button id="density-toggle-btn" class="btn" type="button" title="테이블 행 간격 전환">
+          표 여백: 넓게
+        </button>
+        <button id="theme-toggle-btn" class="btn" type="button">다크 모드</button>
+        <button id="vault-relock-btn" class="btn hidden" type="button">잠금</button>
+        <button class="btn btn-primary" type="button" data-open-modal="1">동기화 &amp; 키 안내</button>
+      </div>
+    </header>
+
+    <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
+
+    <div id="app-layout" class="layout">
+      <aside id="sidebar" class="sidebar" aria-label="Product Hub 탐색">
+        <nav id="sidebar-nav"></nav>
+        <div id="sidebar-sync-info" class="sidebar-footer">
+          <strong>Zero-PII Verified</strong>
+          <code>npm run hub:sync</code>로 데이터 갱신
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <div id="main-view" class="content-container">
+          <div class="empty-state">데이터 번들을 불러오는 중입니다...</div>
+        </div>
+      </main>
+    </div>
+
+    <div
+      id="setup-modal"
+      class="modal-backdrop hidden"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="setup-modal-title"
+    >
+      <div class="modal-card">
+        <div class="modal-header">
+          <h2 id="setup-modal-title" class="modal-title">데이터 동기화 &amp; API 키 안전 등록 안내</h2>
+          <button type="button" class="btn" data-close-modal="1">닫기</button>
+        </div>
+
+        <div class="modal-body-stack">
+          <p>
+            이 Product Hub는 <code>file://</code> 로컬 환경과 정적 GitHub Pages에서 모두 동작하는 구조입니다.
+            저장소 루트에서 동기화 스크립트를 실행하면 Supabase · Amplitude · Langfuse 통계, 비용, RAG 로그가
+            비식별 처리되어 <code>08~11</code> 문서와 <code>hub-bundle.js</code>에 반영됩니다.
+          </p>
+
+          <h3>1. 허브 데이터 동기화 실행</h3>
+          <div class="code-block-copy">
+            <button type="button" class="btn copy-btn" data-copy-target="copy-sync-cmd">복사</button>
+            <pre><code id="copy-sync-cmd">npm run hub:pages</code></pre>
+          </div>
+
+          <h3>2. Amplitude Read Secret &amp; Langfuse 키 안전 등록 (터미널 입력 숨김)</h3>
+          <p>
+            채팅창에 키를 붙여넣지 말고 로컬 터미널에서 아래 명령으로 <code>.env.local</code>에 추가한 뒤
+            <code>npm run hub:sync</code>를 다시 실행하세요. (Git/Vercel에는 업로드되지 않도록 무시 설정되어 있습니다.)
+          </p>
+          <div class="code-block-copy">
+            <button type="button" class="btn copy-btn" data-copy-target="copy-key-cmd">복사</button>
+            <pre><code id="copy-key-cmd">npm run hub:pages</code></pre>
+          </div>
+
+          <blockquote>
+            <p>
+              <strong>보안 원칙:</strong> <code>product-hub/data/</code>는 <code>.gitignore</code> 및
+              <code>.vercelignore</code>에 등록되어 있으며, 동기화 시 <code>assertZeroSensitiveLeaks()</code> 스캐너가
+              PII·시크릿·계정·로컬 경로 노출 여부를 자동 검증합니다.
+            </p>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+
+    <script src="./data/encrypted-vault.js?v=1795444975273"></script>
+    <script src="./assets/hub.js?v=1795444975273"></script>
+  </body>
+</html>
